@@ -5,7 +5,7 @@ use CGI;
 use POSIX;
 use Crypt::CBC;
 
-open STDERR,">/var/www/perl/keepers.err";
+open STDERR,">/var/www/perl/keepers/keepers.err";
 my $input = new CGI;
 print $input->header;
 
@@ -34,7 +34,7 @@ sub encryptString {
 
 my @teams;
 my %players;
-open CSV,"</var/www/perl/ff2016rosters.csv";
+open CSV,"</var/www/perl/keepers/ff2017rosters.csv";
 while(<CSV>) {
 	chomp;
 	s/\s+\z//;
@@ -95,7 +95,7 @@ if(defined $input->param('submitplayers')) {
 	for my $i (1..17) {
 		my $n = shift(@line);
 		my $p = shift(@line);
-		printf("<tr><td><input type='checkbox' name='player' value='$n'><td>%s<td align=center>%s<td align=center>%s</tr>\n", $n, $p, Round($p*0.1)>0?$p+Round($p*0.1):$p+1); 
+		printf("<tr><td><input type='checkbox' name='player' value='$n'><td>%s<td align=center>%s<td align=center>%s</tr>\n", $n, Round($p*0.1)>0?$p-Round($p*0.1):$p-1, $p); 
 	}
 	print "</table>\n";
 	print "<br>\n";

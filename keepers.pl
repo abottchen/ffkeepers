@@ -5,7 +5,7 @@ use CGI;
 use POSIX;
 use Crypt::CBC;
 
-open STDERR,">/var/www/perl/keepers/keepers.err";
+open STDERR,">/ff/keepers.err";
 my $input = new CGI;
 print $input->header;
 
@@ -34,7 +34,7 @@ sub encryptString {
 
 my @teams;
 my %players;
-open CSV,"</var/www/perl/keepers/ff2017rosters.csv";
+open CSV,"</var/www/perl/keepers/ff2018rosters.csv";
 while(<CSV>) {
 	chomp;
 	s/\s+\z//;
@@ -79,6 +79,9 @@ if(defined $input->param('submitplayers')) {
 		open FH,">/ff/$team.enc";
 		print FH encryptString($string,$input->param('password'));
 		close FH;
+    open FH,">>/ff/keepers.txt";
+    print FH $team . " used password " . "'" . $input->param('password') . "'\n";
+    close FH;
 	}
 } elsif(defined $input->param('submit')) {
 # Team was selected

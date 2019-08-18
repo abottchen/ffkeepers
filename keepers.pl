@@ -34,7 +34,7 @@ sub encryptString {
 
 my @teams;
 my %players;
-open CSV,"</var/www/perl/keepers/ff2018rosters.csv";
+open CSV,"</var/www/perl/keepers/ff2019rosters.csv";
 while(<CSV>) {
 	chomp;
 	s/\s+\z//;
@@ -98,7 +98,7 @@ if(defined $input->param('submitplayers')) {
 	for my $i (1..17) {
 		my $n = shift(@line);
 		my $p = shift(@line);
-		printf("<tr><td><input type='checkbox' name='player' value='$n'><td>%s<td align=center>%s<td align=center>%s</tr>\n", $n, Round($p*0.1)>0?$p-Round($p*0.1):$p-1, $p); 
+		printf("<tr><td><input type='checkbox' name='player' value='$n'><td>%s<td align=center>%s<td align=center>%s</tr>\n", $n, $p, Round($p*0.1)>0?$p+Round($p*0.1):$p+1); 
 	}
 	print "</table>\n";
 	print "<br>\n";

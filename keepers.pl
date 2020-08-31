@@ -34,7 +34,7 @@ sub encryptString {
 
 my @teams;
 my %players;
-open CSV,"</var/www/perl/keepers/ff2019rosters.csv";
+open CSV,"</var/www/perl/keepers/ff2020rosters.csv";
 while(<CSV>) {
 	chomp;
 	s/\s+\z//;

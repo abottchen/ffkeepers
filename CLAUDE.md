@@ -21,7 +21,7 @@ This is a Fantasy Football keeper selection system built with Node.js and Expres
 - **public/css/style.css**: Responsive CSS with mobile support
 
 ### Data
-- **ff*rosters.csv**: Yearly roster data files (CSV format with team names and player costs)
+- **rosters/ff*rosters.csv**: Yearly roster data files (CSV format with team names and player costs)
 - **data/encrypted/**: Encrypted keeper selection files
 - **data/keepers.log**: Password recovery log
 

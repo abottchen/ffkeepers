@@ -10,7 +10,7 @@ class CsvService {
     async loadRosterData(year = null) {
         const targetYear = year || this.currentYear;
         const filename = `ff${targetYear}rosters.csv`;
-        const filepath = path.join(__dirname, '../../', filename);
+        const filepath = path.join(__dirname, '../../rosters/', filename);
         
         try {
             const fileContent = await fs.readFile(filepath, 'utf-8');

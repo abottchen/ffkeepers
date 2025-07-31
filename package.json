@@ -1,0 +1,24 @@
+{
+  "name": "ffkeepers",
+  "version": "2.0.0",
+  "description": "Fantasy Football Keeper Selection System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "decrypt": "node src/decrypt.js"
+  },
+  "keywords": ["fantasy", "football", "keeper"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "csv-parse": "^5.5.2",
+    "node-forge": "^1.3.1",
+    "dotenv": "^16.3.1",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

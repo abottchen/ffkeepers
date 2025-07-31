@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football Keeper Selection</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fantasy Football Keeper Selection</h1>
+        </header>
+
+        <main>
+            <!-- Team Selection -->
+            <div id="teamSelection" class="section">
+                <h2>Select Your Team</h2>
+                <select id="teamSelect" class="form-control">
+                    <option value="">Choose your team...</option>
+                </select>
+                <button id="selectTeamBtn" class="btn btn-primary">Select Team</button>
+            </div>
+
+            <!-- Player Selection -->
+            <div id="playerSelection" class="section hidden">
+                <h2>Select Your Keepers</h2>
+                <p class="info">You may select up to 3 players to keep for next season</p>
+                
+                <div id="playerList" class="player-list"></div>
+                
+                <div class="password-section">
+                    <label for="password">Enter password to encrypt your selections:</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter a password you'll remember">
+                    <small>Note: This password will be needed to decrypt your selections. Choose something memorable!</small>
+                </div>
+                
+                <button id="submitKeepers" class="btn btn-success">Submit Keepers</button>
+                <button id="changeTeam" class="btn btn-secondary">Change Team</button>
+            </div>
+
+            <!-- Confirmation -->
+            <div id="confirmation" class="section hidden">
+                <h2>Keepers Saved Successfully!</h2>
+                <div id="confirmationDetails"></div>
+                <button id="selectAnother" class="btn btn-primary">Select Another Team</button>
+            </div>
+
+            <!-- Error Messages -->
+            <div id="errorMessage" class="error hidden"></div>
+        </main>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

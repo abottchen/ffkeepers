@@ -1,1 +1,66 @@
-# ffkeepers
+# Fantasy Football Keeper Selection System
+
+A web application for managing fantasy football keeper selections. Team owners can select up to 3 players to keep for the next season, with encrypted storage of their selections.
+
+## Quick Start
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Configure environment**
+   ```bash
+   cp .env.example .env
+   # Edit .env to set your preferences
+   ```
+
+3. **Add roster data**
+   Place your CSV roster files (e.g., `ff2023rosters.csv`) in the root directory
+
+4. **Start the server**
+   ```bash
+   npm start
+   ```
+
+5. **Access the application**
+   Open http://localhost:3000 in your browser
+
+## CSV File Format
+
+Roster CSV files should follow this format:
+```
+TEAM1,,TEAM2,,TEAM3,,... (team names separated by double commas)
+Player,$,Player,$,Player,$,... (header row)
+PlayerName1,Cost1,PlayerName2,Cost2,... (player data)
+```
+
+## Usage
+
+### Web Interface
+1. Select your team from the dropdown
+2. Choose up to 3 keepers by checking the boxes
+3. Enter a password to encrypt your selections
+4. Submit your keepers
+
+### Command Line Decrypt
+```bash
+npm run decrypt <team-name> <password>
+```
+
+## Development
+
+Run in development mode with auto-reload:
+```bash
+npm run dev
+```
+
+## Configuration
+
+Edit `.env` file to configure:
+- `PORT`: Server port (default: 3000)
+- `CURRENT_YEAR`: Which year's roster file to use
+- `DATA_DIR`: Where to store application data
+- `ENCRYPTED_DIR`: Where to store encrypted keeper files
+- `LOG_FILE`: Where to log password information
+

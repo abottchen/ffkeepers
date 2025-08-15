@@ -50,15 +50,29 @@ router.post('/submit', async (req, res) => {
             return res.status(400).json({ error: 'Maximum 3 keepers allowed' });
         }
         
-        // Save encrypted keepers
-        const keepersData = players.join('/');
+        // Save encrypted keepers with prices
+        const keepersData = players.map(player => {
+            if (typeof player === 'string') {
+                // Handle legacy format (just player names)
+                return player;
+            } else {
+                // New format with name and cost
+                return `${player.name} $${player.cost}`;
+            }
+        }).join('/');
         await encryptionService.saveEncryptedKeepers(team, keepersData, password);
         
         res.json({ 
             success: true,
             message: 'Keepers saved successfully',
             team,
-            keepers: players
+            keepers: players.map(player => {
+                if (typeof player === 'string') {
+                    return player;
+                } else {
+                    return `${player.name} $${player.cost}`;
+                }
+            })
         });
     } catch (error) {
         res.status(500).json({ error: error.message });

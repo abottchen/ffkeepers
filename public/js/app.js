@@ -103,6 +103,9 @@ class KeeperApp {
 
     handlePlayerSelection(event) {
         const playerName = event.target.dataset.name;
+        const playerDiv = event.target.closest('.player-item');
+        const thisYearCostElements = playerDiv.querySelectorAll('.cost-value');
+        const thisYearCost = thisYearCostElements[1].textContent.replace('$', ''); // Second cost-value is "This Year"
         
         if (event.target.checked) {
             if (this.selectedPlayers.size >= 3) {
@@ -110,9 +113,14 @@ class KeeperApp {
                 this.showError('Maximum 3 keepers allowed');
                 return;
             }
-            this.selectedPlayers.add(playerName);
+            this.selectedPlayers.add({name: playerName, cost: thisYearCost});
         } else {
-            this.selectedPlayers.delete(playerName);
+            // Remove by name since we're storing objects now
+            this.selectedPlayers.forEach(player => {
+                if (player.name === playerName) {
+                    this.selectedPlayers.delete(player);
+                }
+            });
         }
         
         this.hideError();

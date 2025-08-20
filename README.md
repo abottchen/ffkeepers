@@ -48,6 +48,34 @@ PlayerName1,Cost1,PlayerName2,Cost2,... (player data)
 npm run decrypt <team-name> <password>
 ```
 
+### Draft Tracker API Integration
+The decrypt tool can automatically submit keeper selections to a fantasy draft tracker API:
+
+```bash
+npm run decrypt <team-name> <password> api=<version>
+```
+
+**Parameters:**
+- `<team-name>`: Team name (matches owner name or team name from API)
+- `<password>`: Password used to encrypt the selections
+- `api=<version>`: Starting version number for API submissions (e.g., `api=1`)
+
+**Example:**
+```bash
+npm run decrypt ADAM mypassword api=1
+```
+
+**What it does:**
+1. Decrypts and displays your keeper selections
+2. Fetches current owners and players from the draft tracker API
+3. Matches your keepers with API player data
+4. Submits each keeper to the draft tracker with calculated prices
+5. Shows success/failure status for each submission
+
+**Requirements:**
+- Draft tracker API must be running and accessible
+- Configure `API_BASE_URL` in `.env` (defaults to `http://localhost`)
+
 ## Development
 
 Run in development mode with auto-reload:
@@ -63,4 +91,5 @@ Edit `.env` file to configure:
 - `DATA_DIR`: Where to store application data
 - `ENCRYPTED_DIR`: Where to store encrypted keeper files
 - `LOG_FILE`: Where to log password information
+- `API_BASE_URL`: Base URL for draft tracker API (default: http://localhost)
 

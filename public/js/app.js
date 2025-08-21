@@ -7,6 +7,7 @@ class KeeperApp {
         this.initializeElements();
         this.attachEventListeners();
         this.initializeTheme();
+        this.initializeLayout();
         this.loadTeams();
     }
 
@@ -34,6 +35,7 @@ class KeeperApp {
         this.passwordSection = document.getElementById('passwordSection');
         this.stickyErrorMessage = document.getElementById('stickyErrorMessage');
         this.themeToggle = document.getElementById('themeToggle');
+        this.layoutToggle = document.getElementById('layoutToggle');
         this.errorTimeout = null;
     }
 
@@ -45,6 +47,7 @@ class KeeperApp {
         this.viewAllTeamsBtn.addEventListener('click', () => this.showAllTeams());
         this.backToSelectionBtn.addEventListener('click', () => this.showTeamSelection());
         this.themeToggle.addEventListener('click', () => this.toggleTheme());
+        this.layoutToggle.addEventListener('click', () => this.toggleLayout());
     }
 
     async loadTeams() {
@@ -463,6 +466,33 @@ class KeeperApp {
             document.documentElement.removeAttribute('data-theme');
             this.themeToggle.textContent = '🌙';
             this.themeToggle.title = 'Switch to light theme';
+        }
+    }
+
+    initializeLayout() {
+        // Load saved layout preference or default to grid
+        const savedLayout = localStorage.getItem('layout') || 'grid';
+        this.setLayout(savedLayout);
+    }
+
+    toggleLayout() {
+        const currentLayout = this.playerList.classList.contains('list-layout') ? 'list' : 'grid';
+        const newLayout = currentLayout === 'grid' ? 'list' : 'grid';
+        this.setLayout(newLayout);
+        localStorage.setItem('layout', newLayout);
+    }
+
+    setLayout(layout) {
+        if (layout === 'list') {
+            this.playerList.classList.add('list-layout');
+            this.layoutToggle.querySelector('.layout-icon').textContent = '☰';
+            this.layoutToggle.querySelector('.layout-text').textContent = 'List View';
+            this.layoutToggle.title = 'Switch to grid view';
+        } else {
+            this.playerList.classList.remove('list-layout');
+            this.layoutToggle.querySelector('.layout-icon').textContent = '⊞';
+            this.layoutToggle.querySelector('.layout-text').textContent = 'Grid View';
+            this.layoutToggle.title = 'Switch to list view';
         }
     }
 }

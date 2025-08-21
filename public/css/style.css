@@ -256,6 +256,30 @@ h2 {
   color: var(--text-primary);
 }
 
+/* Layout Controls */
+.layout-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.layout-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.layout-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.layout-icon {
+  font-size: 1.1rem;
+}
+
 /* Player Cards */
 .player-list {
   display: grid;
@@ -341,6 +365,41 @@ h2 {
   font-weight: bold;
   font-size: 1rem;
   color: var(--text-secondary);
+}
+
+/* List Layout Styles */
+.player-list.list-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.player-list.list-layout .player-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.player-list.list-layout .player-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-list.list-layout .player-name {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.player-list.list-layout .player-costs {
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.player-list.list-layout .cost {
+  min-width: 80px;
 }
 
 /* Position Badge Styles */
@@ -675,6 +734,10 @@ body.sticky-submit-visible {
   
   .player-list {
     grid-template-columns: 1fr;
+  }
+  
+  .layout-controls {
+    justify-content: center;
   }
   
   .player-costs {

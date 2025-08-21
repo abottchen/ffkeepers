@@ -20,6 +20,10 @@ class KeeperApp {
         this.submitKeepersBtn = document.getElementById('submitKeepers');
         this.changeTeamBtn = document.getElementById('changeTeam');
         this.selectAnotherBtn = document.getElementById('selectAnother');
+        this.viewAllTeamsBtn = document.getElementById('viewAllTeamsBtn');
+        this.viewAllTeamsSection = document.getElementById('viewAllTeams');
+        this.allTeamsContainer = document.getElementById('allTeamsContainer');
+        this.backToSelectionBtn = document.getElementById('backToSelection');
         this.errorMessage = document.getElementById('errorMessage');
         this.progressIndicator = document.getElementById('progressIndicator');
         this.salaryCapDisplay = document.getElementById('salaryCapDisplay');
@@ -36,6 +40,8 @@ class KeeperApp {
         this.submitKeepersBtn.addEventListener('click', () => this.submitKeepers());
         this.changeTeamBtn.addEventListener('click', () => this.showTeamSelection());
         this.selectAnotherBtn.addEventListener('click', () => this.showTeamSelection());
+        this.viewAllTeamsBtn.addEventListener('click', () => this.showAllTeams());
+        this.backToSelectionBtn.addEventListener('click', () => this.showTeamSelection());
     }
 
     async loadTeams() {
@@ -246,10 +252,58 @@ class KeeperApp {
         this.updateStickySubmit();
     }
 
+    showAllTeams() {
+        if (!this.teamsData) {
+            this.showError('Teams data not loaded yet');
+            return;
+        }
+        
+        this.displayAllTeams();
+        this.hideAllSections();
+        this.viewAllTeamsSection.classList.remove('hidden');
+    }
+
+    displayAllTeams() {
+        this.allTeamsContainer.innerHTML = '';
+        
+        const teams = this.teamsData.teams;
+        teams.forEach(teamName => {
+            const teamPlayers = this.teamsData.players[teamName];
+            const normalizedTeamName = this.normalizeTeamName(teamName);
+            
+            const teamSection = document.createElement('div');
+            teamSection.className = 'team-section';
+            
+            teamSection.innerHTML = `
+                <h3 class="team-name">${normalizedTeamName}</h3>
+                <div class="team-players-grid">
+                    ${teamPlayers.map(player => `
+                        <div class="compact-player-card">
+                            <div class="compact-player-info">
+                                <span class="compact-player-name">${player.name}</span>
+                                <span class="compact-cost">$${player.thisYearCost}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            
+            this.allTeamsContainer.appendChild(teamSection);
+        });
+    }
+
+    normalizeTeamName(teamName) {
+        return teamName.toLowerCase()
+            .split(' ')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+    }
+
     hideAllSections() {
         this.teamSection.classList.add('hidden');
         this.playerSection.classList.add('hidden');
         this.confirmationSection.classList.add('hidden');
+        this.viewAllTeamsSection.classList.add('hidden');
         this.stickySubmit.classList.add('hidden');
         document.body.classList.remove('sticky-submit-visible');
         this.hideError();

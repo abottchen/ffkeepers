@@ -19,7 +19,18 @@
                 <select id="teamSelect" class="form-control">
                     <option value="">Choose your team...</option>
                 </select>
-                <button id="selectTeamBtn" class="btn btn-primary">Select Team</button>
+                <div class="team-selection-buttons">
+                    <button id="selectTeamBtn" class="btn btn-primary">Select Team</button>
+                    <button id="viewAllTeamsBtn" class="btn btn-secondary">View All Teams</button>
+                </div>
+            </div>
+
+            <!-- View All Teams -->
+            <div id="viewAllTeams" class="section hidden">
+                <h2>All Team Rosters</h2>
+                <p class="info">View all teams and their potential keeper costs</p>
+                <div id="allTeamsContainer" class="all-teams-container"></div>
+                <button id="backToSelection" class="btn btn-primary">Back to Team Selection</button>
             </div>
 
             <!-- Player Selection -->

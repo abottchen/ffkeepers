@@ -116,6 +116,12 @@ h2 {
   font-weight: 500;
 }
 
+.team-selection-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .btn:hover {
   background: #6f5f82;
   transform: translateY(-1px);
@@ -663,5 +669,106 @@ body.sticky-submit-visible {
   
   .player-name {
     font-size: 1rem;
+  }
+}
+
+/* All Teams View - Compact Layout */
+.all-teams-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.team-section {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-card);
+  padding: 0.75rem;
+  box-shadow: var(--shadow-card);
+}
+
+.team-name {
+  color: var(--accent-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-primary);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.team-players-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.compact-player-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-small);
+  padding: 0.4rem 0.6rem;
+  transition: all 0.2s ease;
+}
+
+.compact-player-card:hover {
+  background: rgba(74, 144, 226, 0.05);
+  border-color: var(--border-secondary);
+}
+
+.compact-player-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compact-player-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  flex: 1;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compact-cost {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments for all teams view */
+@media (max-width: 768px) {
+  .all-teams-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .team-selection-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .team-selection-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-teams-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  
+  .compact-player-name {
+    font-size: 0.8rem;
+  }
+  
+  .compact-cost {
+    font-size: 0.8rem;
   }
 }

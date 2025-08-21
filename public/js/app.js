@@ -6,6 +6,7 @@ class KeeperApp {
         
         this.initializeElements();
         this.attachEventListeners();
+        this.initializeTheme();
         this.loadTeams();
     }
 
@@ -32,6 +33,7 @@ class KeeperApp {
         this.stickyBudgetText = document.getElementById('stickyBudgetText');
         this.passwordSection = document.getElementById('passwordSection');
         this.stickyErrorMessage = document.getElementById('stickyErrorMessage');
+        this.themeToggle = document.getElementById('themeToggle');
         this.errorTimeout = null;
     }
 
@@ -42,6 +44,7 @@ class KeeperApp {
         this.selectAnotherBtn.addEventListener('click', () => this.showTeamSelection());
         this.viewAllTeamsBtn.addEventListener('click', () => this.showAllTeams());
         this.backToSelectionBtn.addEventListener('click', () => this.showTeamSelection());
+        this.themeToggle.addEventListener('click', () => this.toggleTheme());
     }
 
     async loadTeams() {
@@ -435,6 +438,31 @@ class KeeperApp {
         } else {
             this.passwordSection.classList.add('hidden');
             this.submitKeepersBtn.disabled = true;
+        }
+    }
+
+    initializeTheme() {
+        // Load saved theme preference or default to dark
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        this.setTheme(savedTheme);
+    }
+
+    toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        this.setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    }
+
+    setTheme(theme) {
+        if (theme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            this.themeToggle.textContent = '☀️';
+            this.themeToggle.title = 'Switch to dark theme';
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            this.themeToggle.textContent = '🌙';
+            this.themeToggle.title = 'Switch to light theme';
         }
     }
 }

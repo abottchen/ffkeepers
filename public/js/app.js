@@ -22,7 +22,6 @@ class KeeperApp {
         this.passwordInput = document.getElementById('password');
         this.submitKeepersBtn = document.getElementById('submitKeepers');
         this.changeTeamBtn = document.getElementById('changeTeam');
-        this.selectAnotherBtn = document.getElementById('selectAnother');
         this.viewAllTeamsBtn = document.getElementById('viewAllTeamsBtn');
         this.viewAllTeamsSection = document.getElementById('viewAllTeams');
         this.allTeamsContainer = document.getElementById('allTeamsContainer');
@@ -45,7 +44,6 @@ class KeeperApp {
         this.selectTeamBtn.addEventListener('click', () => this.selectTeam());
         this.submitKeepersBtn.addEventListener('click', () => this.submitKeepers());
         this.changeTeamBtn.addEventListener('click', () => this.showTeamSelection());
-        this.selectAnotherBtn.addEventListener('click', () => this.showTeamSelection());
         this.viewAllTeamsBtn.addEventListener('click', () => this.showAllTeams());
         this.backToSelectionBtn.addEventListener('click', () => this.showTeamSelection());
         this.themeToggle.addEventListener('click', () => this.toggleTheme());

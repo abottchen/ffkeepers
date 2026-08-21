@@ -2,12 +2,13 @@ class KeeperApp {
     constructor() {
         this.currentTeam = null;
         this.teamsData = null;
-        this.selectedPlayers = new Set();
-        
+        this.selectedPlayers = []; // ordered — index is the slip slot number
+        this.maxKeepers = 3;
+        this.budget = 200;
+
         this.initializeElements();
         this.attachEventListeners();
         this.initializeTheme();
-        this.initializeLayout();
         this.loadTeams();
     }
 
@@ -27,15 +28,16 @@ class KeeperApp {
         this.allTeamsContainer = document.getElementById('allTeamsContainer');
         this.backToSelectionBtn = document.getElementById('backToSelection');
         this.errorMessage = document.getElementById('errorMessage');
-        this.progressIndicator = document.getElementById('progressIndicator');
-        this.salaryCapDisplay = document.getElementById('salaryCapDisplay');
-        this.stickySubmit = document.getElementById('stickySubmit');
-        this.stickyProgressText = document.getElementById('stickyProgressText');
-        this.stickyBudgetText = document.getElementById('stickyBudgetText');
-        this.passwordSection = document.getElementById('passwordSection');
-        this.stickyErrorMessage = document.getElementById('stickyErrorMessage');
         this.themeToggle = document.getElementById('themeToggle');
-        this.layoutToggle = document.getElementById('layoutToggle');
+        this.rosterTeamName = document.getElementById('rosterTeamName');
+        this.slipTeamName = document.getElementById('slipTeamName');
+        this.slipSlots = document.getElementById('slipSlots');
+        this.slipBudget = document.getElementById('slipBudget');
+        this.slipTotal = document.getElementById('slipTotal');
+        this.slipRemaining = document.getElementById('slipRemaining');
+        this.budgetBarFill = document.getElementById('budgetBarFill');
+        this.slipHint = document.getElementById('slipHint');
+        this.slipError = document.getElementById('slipError');
         this.errorTimeout = null;
     }
 
@@ -47,14 +49,14 @@ class KeeperApp {
         this.viewAllTeamsBtn.addEventListener('click', () => this.showAllTeams());
         this.backToSelectionBtn.addEventListener('click', () => this.showTeamSelection());
         this.themeToggle.addEventListener('click', () => this.toggleTheme());
-        this.layoutToggle.addEventListener('click', () => this.toggleLayout());
+        this.passwordInput.addEventListener('input', () => this.updateSlip());
     }
 
     async loadTeams() {
         try {
             const response = await fetch('/api/keepers/teams');
             const data = await response.json();
-            
+
             if (response.ok) {
                 this.teamsData = data;
                 this.populateTeamSelect(data.teams);
@@ -90,109 +92,135 @@ class KeeperApp {
 
     displayPlayers(players) {
         this.playerList.innerHTML = '';
-        this.selectedPlayers.clear();
-        this.updateProgressAndSalaryCap();
+        this.selectedPlayers = [];
 
-        players.forEach((player, index) => {
+        players.forEach(player => {
             const playerCard = document.createElement('div');
             playerCard.className = 'player-card';
             playerCard.dataset.playerName = player.name;
-            playerCard.dataset.cost = player.thisYearCost;
-            
+            playerCard.tabIndex = 0;
+            playerCard.setAttribute('role', 'button');
+
             playerCard.innerHTML = `
-                <div class="player-info">
-                    <div>
-                        <div class="player-name">${player.name}</div>
-                    </div>
-                    <div class="player-costs">
-                        <div class="cost">
-                            <span class="cost-label">Last Year</span>
-                            <span class="cost-value">$${player.lastYearCost}</span>
-                        </div>
-                        <div class="cost">
-                            <span class="cost-label">This Year</span>
-                            <span class="cost-value">$${player.thisYearCost}</span>
-                        </div>
-                    </div>
-                </div>
+                <span class="slot-badge"></span>
+                <span class="player-name">${player.name}</span>
+                <span class="player-costs">
+                    <span class="cost-last">$${player.lastYearCost}</span>
+                    <span class="cost-arrow">&rarr;</span>
+                    <span class="cost-keep">$${player.thisYearCost}</span>
+                </span>
             `;
-            
-            playerCard.addEventListener('click', (e) => {
-                this.handleCardSelection(playerCard, player);
+
+            playerCard.addEventListener('click', () => this.togglePlayer(player));
+            playerCard.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.togglePlayer(player);
+                }
             });
-            
+
             this.playerList.appendChild(playerCard);
         });
+
+        this.updateSlip();
     }
 
-    
-    handleCardSelection(playerCard, player) {
-        const isSelected = playerCard.classList.contains('selected');
-        const playerName = player.name;
-        
-        if (isSelected) {
-            // Deselect player
-            playerCard.classList.remove('selected');
-            // Remove by finding the matching player object
-            this.selectedPlayers.forEach(selectedPlayer => {
-                if (selectedPlayer.name === playerName) {
-                    this.selectedPlayers.delete(selectedPlayer);
-                }
-            });
+    togglePlayer(player) {
+        const index = this.selectedPlayers.findIndex(p => p.name === player.name);
+
+        if (index >= 0) {
+            this.selectedPlayers.splice(index, 1);
         } else {
-            // Check if we can select more players
-            if (this.selectedPlayers.size >= 3) {
-                this.showError('You can only select up to 3 keepers');
+            if (this.selectedPlayers.length >= this.maxKeepers) {
+                this.showError(`You can only select up to ${this.maxKeepers} keepers`);
                 return;
             }
-            
-            // Select player
-            playerCard.classList.add('selected');
-            this.selectedPlayers.add({ name: player.name, cost: player.thisYearCost });
+            this.selectedPlayers.push({ name: player.name, cost: player.thisYearCost });
         }
-        
-        this.updateProgressAndSalaryCap();
-        this.updateStickySubmit();
+
         this.hideError();
+        this.updateSlip();
     }
 
-    handlePlayerSelection(event) {
-        // Legacy method - can be removed if not used elsewhere
-        const playerName = event.target.dataset.name;
-        const playerDiv = event.target.closest('.player-item');
-        const thisYearCostElements = playerDiv.querySelectorAll('.cost-value');
-        const thisYearCost = thisYearCostElements[1].textContent.replace('$', ''); // Second cost-value is "This Year"
-        
-        if (event.target.checked) {
-            if (this.selectedPlayers.size >= 3) {
-                event.target.checked = false;
-                this.showError('Maximum 3 keepers allowed');
-                return;
-            }
-            this.selectedPlayers.add({name: playerName, cost: thisYearCost});
-        } else {
-            // Remove by name since we're storing objects now
-            this.selectedPlayers.forEach(player => {
-                if (player.name === playerName) {
-                    this.selectedPlayers.delete(player);
-                }
-            });
-        }
-        
-        this.updateProgressAndSalaryCap();
+    removePlayer(playerName) {
+        this.selectedPlayers = this.selectedPlayers.filter(p => p.name !== playerName);
         this.hideError();
+        this.updateSlip();
+    }
+
+    updateSlip() {
+        // Sync roster cards with the slip (selected state + slot number badge)
+        this.playerList.querySelectorAll('.player-card').forEach(card => {
+            const slot = this.selectedPlayers.findIndex(p => p.name === card.dataset.playerName);
+            card.classList.toggle('selected', slot >= 0);
+            card.querySelector('.slot-badge').textContent = slot >= 0 ? slot + 1 : '';
+        });
+
+        // Render the three slots
+        this.slipSlots.innerHTML = '';
+        for (let i = 0; i < this.maxKeepers; i++) {
+            const player = this.selectedPlayers[i];
+            const slot = document.createElement('li');
+
+            if (player) {
+                slot.className = 'slip-slot filled';
+                slot.innerHTML = `
+                    <span class="slot-num">${i + 1}</span>
+                    <span class="slot-name">${player.name}</span>
+                    <span class="slot-cost">$${player.cost}</span>
+                    <button class="slot-remove" title="Remove ${player.name}" aria-label="Remove ${player.name}">&times;</button>
+                `;
+                slot.querySelector('.slot-remove').addEventListener('click', () => this.removePlayer(player.name));
+            } else {
+                slot.className = 'slip-slot empty';
+                slot.innerHTML = `
+                    <span class="slot-num">${i + 1}</span>
+                    <span class="slot-name">Empty slot</span>
+                `;
+            }
+
+            this.slipSlots.appendChild(slot);
+        }
+
+        // Budget meter
+        const totalCost = this.selectedPlayers.reduce((sum, p) => sum + parseInt(p.cost), 0);
+        this.slipTotal.textContent = `$${totalCost}`;
+        this.slipRemaining.textContent = totalCost > this.budget
+            ? `-$${totalCost - this.budget}`
+            : `$${this.budget - totalCost}`;
+        this.budgetBarFill.style.width = `${Math.min(100, (totalCost / this.budget) * 100)}%`;
+
+        this.slipBudget.className = 'slip-budget';
+        if (totalCost > this.budget) {
+            this.slipBudget.classList.add('over-budget');
+        } else if (totalCost > 150) {
+            this.slipBudget.classList.add('near-budget');
+        }
+
+        // Submit readiness + step hint
+        const count = this.selectedPlayers.length;
+        const hasPassword = this.passwordInput.value.trim().length > 0;
+        this.submitKeepersBtn.disabled = count === 0 || !hasPassword;
+
+        this.slipHint.classList.remove('ready');
+        if (count === 0) {
+            this.slipHint.textContent = 'Pick at least one player to get started';
+        } else if (!hasPassword) {
+            this.slipHint.textContent = 'Enter your team password to submit';
+        } else {
+            this.slipHint.textContent = `Ready to lock in ${count} keeper${count > 1 ? 's' : ''}`;
+            this.slipHint.classList.add('ready');
+        }
     }
 
     async submitKeepers() {
         const password = this.passwordInput.value.trim();
-        
+
         if (!password) {
             this.showError('Please enter a password');
             return;
         }
 
-        const keepersArray = Array.from(this.selectedPlayers);
-        
         try {
             const response = await fetch('/api/keepers/submit', {
                 method: 'POST',
@@ -201,13 +229,13 @@ class KeeperApp {
                 },
                 body: JSON.stringify({
                     team: this.currentTeam,
-                    players: keepersArray,
+                    players: this.selectedPlayers,
                     password: password
                 })
             });
 
             const data = await response.json();
-            
+
             if (response.ok) {
                 this.showConfirmation(data);
             } else {
@@ -220,7 +248,7 @@ class KeeperApp {
 
     showConfirmation(data) {
         const details = document.getElementById('confirmationDetails');
-        
+
         if (data.keepers.length === 0) {
             details.innerHTML = `
                 <h3>Team: ${data.team}</h3>
@@ -252,10 +280,11 @@ class KeeperApp {
 
     showPlayerSelection() {
         this.hideAllSections();
+        const teamName = this.normalizeTeamName(this.currentTeam);
+        this.rosterTeamName.textContent = teamName;
+        this.slipTeamName.textContent = teamName;
         this.playerSection.classList.remove('hidden');
-        this.stickySubmit.classList.remove('hidden');
-        document.body.classList.add('sticky-submit-visible');
-        this.updateStickySubmit();
+        this.updateSlip();
     }
 
     showAllTeams() {
@@ -263,7 +292,7 @@ class KeeperApp {
             this.showError('Teams data not loaded yet');
             return;
         }
-        
+
         this.displayAllTeams();
         this.hideAllSections();
         this.viewAllTeamsSection.classList.remove('hidden');
@@ -271,15 +300,15 @@ class KeeperApp {
 
     displayAllTeams() {
         this.allTeamsContainer.innerHTML = '';
-        
+
         const teams = this.teamsData.teams;
         teams.forEach(teamName => {
             const teamPlayers = this.teamsData.players[teamName];
             const normalizedTeamName = this.normalizeTeamName(teamName);
-            
+
             const teamSection = document.createElement('div');
             teamSection.className = 'team-section';
-            
+
             teamSection.innerHTML = `
                 <h3 class="team-name">${normalizedTeamName}</h3>
                 <div class="team-players-grid">
@@ -293,7 +322,7 @@ class KeeperApp {
                     `).join('')}
                 </div>
             `;
-            
+
             this.allTeamsContainer.appendChild(teamSection);
         });
     }
@@ -310,142 +339,44 @@ class KeeperApp {
         this.playerSection.classList.add('hidden');
         this.confirmationSection.classList.add('hidden');
         this.viewAllTeamsSection.classList.add('hidden');
-        this.stickySubmit.classList.add('hidden');
-        document.body.classList.remove('sticky-submit-visible');
         this.hideError();
     }
 
     resetForm() {
         this.teamSelect.value = '';
         this.passwordInput.value = '';
-        this.selectedPlayers.clear();
+        this.selectedPlayers = [];
         this.currentTeam = null;
     }
 
     showError(message) {
-        // Clear any existing timeout
         if (this.errorTimeout) {
             clearTimeout(this.errorTimeout);
+            this.errorTimeout = null;
         }
-        
-        // Show error in sticky panel if it's visible, otherwise use regular error message
-        if (!this.stickySubmit.classList.contains('hidden')) {
-            this.stickyErrorMessage.textContent = message;
-            this.stickyErrorMessage.classList.remove('hidden', 'fade-out');
-            
-            // Auto-fade after 3 seconds
-            this.errorTimeout = setTimeout(() => {
-                this.fadeOutStickyError();
-            }, 3000);
+
+        // On the selection screen, errors surface inside the keeper slip
+        if (!this.playerSection.classList.contains('hidden')) {
+            this.slipError.textContent = message;
+            this.slipError.classList.remove('hidden');
+            this.errorTimeout = setTimeout(() => this.hideError(), 4000);
         } else {
             this.errorMessage.textContent = message;
             this.errorMessage.classList.remove('hidden');
         }
     }
 
-    fadeOutStickyError() {
-        this.stickyErrorMessage.classList.add('fade-out');
-        // Hide completely after fade animation completes
-        setTimeout(() => {
-            this.stickyErrorMessage.classList.add('hidden');
-            this.stickyErrorMessage.classList.remove('fade-out');
-        }, 300); // Match CSS animation duration
-    }
-
     hideError() {
-        // Clear any pending timeout
         if (this.errorTimeout) {
             clearTimeout(this.errorTimeout);
             this.errorTimeout = null;
         }
-        
+
         this.errorMessage.classList.add('hidden');
-        this.stickyErrorMessage.classList.add('hidden');
-        this.stickyErrorMessage.classList.remove('fade-out');
-    }
-
-    updateProgressAndSalaryCap() {
-        const selectedCount = this.selectedPlayers.size;
-        const maxKeepers = 3;
-        
-        // Update progress indicator
-        if (this.progressIndicator) {
-            this.progressIndicator.textContent = `${selectedCount} of ${maxKeepers} keepers selected`;
-            this.progressIndicator.className = 'progress-indicator';
-            
-            if (selectedCount === 0) {
-                this.progressIndicator.classList.add('empty');
-            } else if (selectedCount === maxKeepers) {
-                this.progressIndicator.classList.add('complete');
-            } else {
-                this.progressIndicator.classList.add('partial');
-            }
-        }
-        
-        // Update salary cap display
-        if (this.salaryCapDisplay) {
-            const totalCost = Array.from(this.selectedPlayers).reduce((sum, player) => {
-                return sum + parseInt(player.cost);
-            }, 0);
-            
-            this.salaryCapDisplay.innerHTML = `
-                <div class="salary-summary">
-                    <span class="total-cost">Total Keeper Cost: <strong>$${totalCost}</strong></span>
-                    <span class="remaining-budget">Remaining Budget: <strong>$${200 - totalCost}</strong></span>
-                </div>
-            `;
-            
-            // Add visual feedback for budget status
-            this.salaryCapDisplay.className = 'salary-cap-display';
-            if (totalCost > 200) {
-                this.salaryCapDisplay.classList.add('over-budget');
-            } else if (totalCost > 150) {
-                this.salaryCapDisplay.classList.add('near-budget');
-            } else {
-                this.salaryCapDisplay.classList.add('under-budget');
-            }
-        }
-    }
-
-    updateStickySubmit() {
-        const selectedCount = this.selectedPlayers.size;
-        const totalCost = Array.from(this.selectedPlayers).reduce((sum, player) => {
-            return sum + parseInt(player.cost);
-        }, 0);
-        
-        // Update progress text
-        if (selectedCount === 0) {
-            this.stickyProgressText.textContent = 'Select up to 3 keepers';
-        } else if (selectedCount === 1) {
-            this.stickyProgressText.textContent = '1 keeper selected';
-        } else if (selectedCount === 2) {
-            this.stickyProgressText.textContent = '2 keepers selected';
-        } else {
-            this.stickyProgressText.textContent = '3 keepers selected';
-        }
-        
-        // Update budget text
-        this.stickyBudgetText.textContent = `Budget: $${200 - totalCost}`;
-        this.stickyBudgetText.className = 'submit-budget';
-        if (totalCost > 200) {
-            this.stickyBudgetText.classList.add('over-budget');
-            this.stickyBudgetText.textContent = `Over budget: -$${totalCost - 200}`;
-        } else if (totalCost > 150) {
-            this.stickyBudgetText.classList.add('near-budget');
-        }
-        
-        // Show/hide password field and enable submit button
-        if (selectedCount > 0) {
-            this.passwordSection.classList.remove('hidden');
-            this.submitKeepersBtn.disabled = false;
-        } else {
-            this.passwordSection.classList.add('hidden');
-            this.submitKeepersBtn.disabled = true;
-        }
+        this.slipError.classList.add('hidden');
     }
 
     initializeTheme() {
-        // Load saved theme preference or default to dark
         const savedTheme = localStorage.getItem('theme') || 'dark';
         this.setTheme(savedTheme);
     }
@@ -466,33 +397,6 @@ class KeeperApp {
             document.documentElement.removeAttribute('data-theme');
             this.themeToggle.textContent = '🌙';
             this.themeToggle.title = 'Switch to light theme';
-        }
-    }
-
-    initializeLayout() {
-        // Load saved layout preference or default to grid
-        const savedLayout = localStorage.getItem('layout') || 'grid';
-        this.setLayout(savedLayout);
-    }
-
-    toggleLayout() {
-        const currentLayout = this.playerList.classList.contains('list-layout') ? 'list' : 'grid';
-        const newLayout = currentLayout === 'grid' ? 'list' : 'grid';
-        this.setLayout(newLayout);
-        localStorage.setItem('layout', newLayout);
-    }
-
-    setLayout(layout) {
-        if (layout === 'list') {
-            this.playerList.classList.add('list-layout');
-            this.layoutToggle.querySelector('.layout-icon').textContent = '☰';
-            this.layoutToggle.querySelector('.layout-text').textContent = 'List View';
-            this.layoutToggle.title = 'Switch to grid view';
-        } else {
-            this.playerList.classList.remove('list-layout');
-            this.layoutToggle.querySelector('.layout-icon').textContent = '⊞';
-            this.layoutToggle.querySelector('.layout-text').textContent = 'Grid View';
-            this.layoutToggle.title = 'Switch to list view';
         }
     }
 }

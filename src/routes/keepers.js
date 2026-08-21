@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const csvService = require('../services/csvService');
+const rosterService = require('../services/rosterService');
 const encryptionService = require('../services/encryptionService');
 
 // Get teams and roster data
 router.get('/teams', async (req, res) => {
     try {
-        const { teams, players } = await csvService.loadRosterData();
+        const { teams, players } = await rosterService.loadRosterData();
         res.json({ teams, players });
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -16,16 +16,16 @@ router.get('/teams', async (req, res) => {
 // Get players for a specific team
 router.get('/team/:teamName', async (req, res) => {
     try {
-        const { teamName } = req.params;
-        const { teams, players } = await csvService.loadRosterData();
-        
-        if (!players[teamName]) {
+        const teamKey = req.params.teamName.toLowerCase();
+        const { players } = await rosterService.loadRosterData();
+
+        if (!players[teamKey]) {
             return res.status(404).json({ error: 'Team not found' });
         }
-        
-        res.json({ 
-            team: teamName,
-            players: players[teamName]
+
+        res.json({
+            team: teamKey,
+            players: players[teamKey]
         });
     } catch (error) {
         res.status(500).json({ error: error.message });

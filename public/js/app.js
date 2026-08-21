@@ -72,8 +72,8 @@ class KeeperApp {
         this.teamSelect.innerHTML = '<option value="">Choose your team...</option>';
         teams.forEach(team => {
             const option = document.createElement('option');
-            option.value = team;
-            option.textContent = team;
+            option.value = team.key;
+            option.textContent = `${team.ownerName} — ${team.teamName}`;
             this.teamSelect.appendChild(option);
         });
     }
@@ -86,8 +86,16 @@ class KeeperApp {
         }
 
         this.currentTeam = selectedTeam;
+        this.currentTeamInfo = this.teamsData.teams.find(t => t.key === selectedTeam);
         this.displayPlayers(this.teamsData.players[selectedTeam]);
         this.showPlayerSelection();
+    }
+
+    headshotUrl(player) {
+        if (player.position === 'D/ST') {
+            return `https://a.espncdn.com/i/teamlogos/nfl/500/${player.nflTeam.toLowerCase()}.png`;
+        }
+        return `https://a.espncdn.com/i/headshots/nfl/players/full/${player.espnId}.png`;
     }
 
     displayPlayers(players) {
@@ -103,7 +111,11 @@ class KeeperApp {
 
             playerCard.innerHTML = `
                 <span class="slot-badge"></span>
-                <span class="player-name">${player.name}</span>
+                <img class="player-headshot" src="${this.headshotUrl(player)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+                <span class="player-info">
+                    <span class="player-name">${player.name}</span>
+                    <span class="player-pos">${player.position}</span>
+                </span>
                 <span class="player-costs">
                     <span class="cost-last">$${player.lastYearCost}</span>
                     <span class="cost-arrow">&rarr;</span>
@@ -249,15 +261,19 @@ class KeeperApp {
     showConfirmation(data) {
         const details = document.getElementById('confirmationDetails');
 
+        const teamLabel = this.currentTeamInfo
+            ? `${this.currentTeamInfo.ownerName} — ${this.currentTeamInfo.teamName}`
+            : data.team;
+
         if (data.keepers.length === 0) {
             details.innerHTML = `
-                <h3>Team: ${data.team}</h3>
+                <h3>Team: ${teamLabel}</h3>
                 <p>No keepers selected</p>
                 <p><strong>Password saved successfully!</strong></p>
             `;
         } else {
             details.innerHTML = `
-                <h3>Team: ${data.team}</h3>
+                <h3>Team: ${teamLabel}</h3>
                 <p><strong>Keepers:</strong></p>
                 <ul>
                     ${data.keepers.map(k => `<li>${k}</li>`).join('')}
@@ -280,9 +296,9 @@ class KeeperApp {
 
     showPlayerSelection() {
         this.hideAllSections();
-        const teamName = this.normalizeTeamName(this.currentTeam);
-        this.rosterTeamName.textContent = teamName;
-        this.slipTeamName.textContent = teamName;
+        this.rosterTeamName.textContent = this.currentTeamInfo.teamName;
+        this.rosterTeamName.style.setProperty('--team-color', this.currentTeamInfo.color);
+        this.slipTeamName.textContent = this.currentTeamInfo.ownerName;
         this.playerSection.classList.remove('hidden');
         this.updateSlip();
     }
@@ -301,19 +317,18 @@ class KeeperApp {
     displayAllTeams() {
         this.allTeamsContainer.innerHTML = '';
 
-        const teams = this.teamsData.teams;
-        teams.forEach(teamName => {
-            const teamPlayers = this.teamsData.players[teamName];
-            const normalizedTeamName = this.normalizeTeamName(teamName);
+        this.teamsData.teams.forEach(team => {
+            const teamPlayers = this.teamsData.players[team.key];
 
             const teamSection = document.createElement('div');
             teamSection.className = 'team-section';
 
             teamSection.innerHTML = `
-                <h3 class="team-name">${normalizedTeamName}</h3>
+                <h3 class="team-name" style="--team-color: ${team.color}">${team.teamName} <span class="team-owner">${team.ownerName}</span></h3>
                 <div class="team-players-grid">
                     ${teamPlayers.map(player => `
                         <div class="compact-player-card">
+                            <img class="player-headshot compact-headshot" src="${this.headshotUrl(player)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
                             <div class="compact-player-info">
                                 <span class="compact-player-name">${player.name}</span>
                                 <span class="compact-cost">$${player.thisYearCost}</span>
@@ -325,13 +340,6 @@ class KeeperApp {
 
             this.allTeamsContainer.appendChild(teamSection);
         });
-    }
-
-    normalizeTeamName(teamName) {
-        return teamName.toLowerCase()
-            .split(' ')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
     }
 
     hideAllSections() {
@@ -347,6 +355,7 @@ class KeeperApp {
         this.passwordInput.value = '';
         this.selectedPlayers = [];
         this.currentTeam = null;
+        this.currentTeamInfo = null;
     }
 
     showError(message) {

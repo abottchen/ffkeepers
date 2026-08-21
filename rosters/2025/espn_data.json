@@ -1,0 +1,3537 @@
+{
+  "year": 2025,
+  "league_id": 577910,
+  "teams": [
+    {
+      "espn_team_id": 1,
+      "team_name": "Don't Joe Chasin' Waterfalls",
+      "owner_first_name": "Jodi",
+      "players": [
+        {
+          "espn_player_id": 4361307,
+          "name": "Trey McBride",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4362238,
+          "name": "Chase Brown",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4239993,
+          "name": "Tee Higgins",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3915511,
+          "name": "Joe Burrow",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 16737,
+          "name": "Mike Evans",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4568490,
+          "name": "RJ Harvey",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": -16007,
+          "name": "Broncos D/ST",
+          "position": "D/ST",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4567750,
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4361579,
+          "name": "Javonte Williams",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 2976212,
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4431452,
+          "name": "Drake Maye",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4697815,
+          "name": "Rachaad White",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4038815,
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4595342,
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4429275,
+          "name": "Trey Benson",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 2985659,
+          "name": "Wil Lutz",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16030,
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4362249,
+          "name": "Jayden Reed",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 2,
+      "team_name": "Call Me The Breece",
+      "owner_first_name": "Adam",
+      "players": [
+        {
+          "espn_player_id": 4426515,
+          "name": "Puka Nacua",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4430737,
+          "name": "Kyren Williams",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4427366,
+          "name": "Breece Hall",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3139477,
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4430878,
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 15847,
+          "name": "Travis Kelce",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4360516,
+          "name": "Tyrone Tracy Jr.",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4428557,
+          "name": "Tyjae Spears",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4360248,
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4035687,
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4569587,
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16014,
+          "name": "Rams D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 2473037,
+          "name": "Jason Myers",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3912547,
+          "name": "Sam Darnold",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16003,
+          "name": "Bears D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4429096,
+          "name": "Blake Corum",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3116406,
+          "name": "Tyreek Hill",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4036378,
+          "name": "Jordan Love",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4576297,
+          "name": "AJ Barner",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 3,
+      "team_name": "Like a Good Nabers",
+      "owner_first_name": "Greg",
+      "players": [
+        {
+          "espn_player_id": 4362628,
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4429795,
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4595348,
+          "name": "Malik Nabers",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3918298,
+          "name": "Josh Allen",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4429160,
+          "name": "De'Von Achane",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4685702,
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4385690,
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4431299,
+          "name": "Rome Odunze",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4569173,
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4360078,
+          "name": "Alec Pierce",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3117256,
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4569923,
+          "name": "Andy Borregales",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16005,
+          "name": "Browns D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16021,
+          "name": "Eagles D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4431280,
+          "name": "Troy Franklin",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 2971573,
+          "name": "Ka'imi Fairbairn",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4682745,
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4597500,
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 4,
+      "team_name": "To Infinity and Bijan!",
+      "owner_first_name": "Elisa",
+      "players": [
+        {
+          "espn_player_id": 4374302,
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4683062,
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4430807,
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4685382,
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4426338,
+          "name": "Bo Nix",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3916148,
+          "name": "Tony Pollard",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4362081,
+          "name": "Cameron Dicker",
+          "position": "K",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": -16034,
+          "name": "Texans D/ST",
+          "position": "D/ST",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4696981,
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4361370,
+          "name": "Chris Olave",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4429059,
+          "name": "Woody Marks",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 15818,
+          "name": "Keenan Allen",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 5083076,
+          "name": "Harold Fannin Jr.",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3046439,
+          "name": "Hunter Henry",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4689114,
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4887558,
+          "name": "Emanuel Wilson",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4877706,
+          "name": "Jayden Higgins",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4373626,
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 5,
+      "team_name": "The Hubbs",
+      "owner_first_name": "Mitch",
+      "players": [
+        {
+          "espn_player_id": 4241416,
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4432577,
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4432665,
+          "name": "Brock Bowers",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 2977187,
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3128429,
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4567048,
+          "name": "Kenneth Walker III",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4047650,
+          "name": "DK Metcalf",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3042519,
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4426388,
+          "name": "Jameson Williams",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3126486,
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4372016,
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4361411,
+          "name": "Pat Freiermuth",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3046779,
+          "name": "Jared Goff",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4371733,
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16025,
+          "name": "49ers D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 17372,
+          "name": "Chris Boswell",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4361529,
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 6,
+      "team_name": "More than A. Thielen",
+      "owner_first_name": "Steve",
+      "players": [
+        {
+          "espn_player_id": 4262921,
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4596448,
+          "name": "Bucky Irving",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4242335,
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4241389,
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4258173,
+          "name": "Nico Collins",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3916387,
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4036133,
+          "name": "T.J. Hockenson",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": -16033,
+          "name": "Ravens D/ST",
+          "position": "D/ST",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3128720,
+          "name": "Nick Chubb",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4686472,
+          "name": "Marvin Mims Jr.",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16026,
+          "name": "Seahawks D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4361432,
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4428718,
+          "name": "Tre Tucker",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3123076,
+          "name": "David Njoku",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3059915,
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 17427,
+          "name": "Cairo Santos",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4360310,
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 7,
+      "team_name": "Blood Sweat Beers",
+      "owner_first_name": "Jacqueline",
+      "players": [
+        {
+          "espn_player_id": 4569618,
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3929630,
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4426502,
+          "name": "Drake London",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4040715,
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4890973,
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3915416,
+          "name": "DJ Moore",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3051876,
+          "name": "Evan Engram",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": -16016,
+          "name": "Vikings D/ST",
+          "position": "D/ST",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4426385,
+          "name": "Zach Charbonnet",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4373678,
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3886598,
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": -16009,
+          "name": "Packers D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 15835,
+          "name": "Zach Ertz",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 11122,
+          "name": "Matt Prater",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4431611,
+          "name": "Caleb Williams",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4574716,
+          "name": "Harrison Mevis",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4360761,
+          "name": "Michael Wilson",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3116365,
+          "name": "Mark Andrews",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 8,
+      "team_name": "THE NIGHTMARE",
+      "owner_first_name": "Raman",
+      "players": [
+        {
+          "espn_player_id": 3040151,
+          "name": "George Kittle",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4379399,
+          "name": "James Cook III",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4612826,
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3117251,
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4432708,
+          "name": "Marvin Harrison Jr.",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 2577417,
+          "name": "Dak Prescott",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 16800,
+          "name": "Davante Adams",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3052587,
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4239996,
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 12483,
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3121023,
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4430968,
+          "name": "Kimani Vidal",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16017,
+          "name": "Patriots D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4686361,
+          "name": "Cam Little",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4248528,
+          "name": "Christian Watson",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3116165,
+          "name": "Chris Godwin Jr.",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4685278,
+          "name": "Luther Burden III",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 9,
+      "team_name": "Bye Week",
+      "owner_first_name": "Sanjay",
+      "players": [
+        {
+          "espn_player_id": 4047365,
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4569987,
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3054850,
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3121422,
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4038941,
+          "name": "Justin Herbert",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4241478,
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4431459,
+          "name": "Tyler Warren",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4428331,
+          "name": "Rashee Rice",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4685472,
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4433970,
+          "name": "J.J. McCarthy",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4259545,
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4429025,
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4689936,
+          "name": "Jake Bates",
+          "position": "K",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": -16006,
+          "name": "Cowboys D/ST",
+          "position": "D/ST",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4575131,
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4360438,
+          "name": "Brandon Aiyuk",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3116385,
+          "name": "Joe Mixon",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4685415,
+          "name": "Travis Hunter",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3045147,
+          "name": "James Conner",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        }
+      ]
+    },
+    {
+      "espn_team_id": 10,
+      "team_name": "Dewey Pest Control",
+      "owner_first_name": "Lance",
+      "players": [
+        {
+          "espn_player_id": 4426348,
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4035538,
+          "name": "David Montgomery",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4429615,
+          "name": "Zay Flowers",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4432773,
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3043078,
+          "name": "Derrick Henry",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4047646,
+          "name": "A.J. Brown",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4430027,
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": -16023,
+          "name": "Steelers D/ST",
+          "position": "D/ST",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 3953687,
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4360569,
+          "name": "Jordan Mason",
+          "position": "RB",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4426354,
+          "name": "George Pickens",
+          "position": "WR",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4242355,
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "acquisition_type": "DRAFT"
+        },
+        {
+          "espn_player_id": 4429205,
+          "name": "Jordan Addison",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4432710,
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4361741,
+          "name": "Brock Purdy",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4432762,
+          "name": "Shedeur Sanders",
+          "position": "QB",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 3916433,
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "acquisition_type": "ADD"
+        },
+        {
+          "espn_player_id": 4723086,
+          "name": "Colston Loveland",
+          "position": "TE",
+          "acquisition_type": "ADD"
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1756609214622,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 15835,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1756609214621,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 5081397,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1756695613031,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": -16020,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1756609214623,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": -16026,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1756609214622,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 4686472,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1756609214623,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 16460,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1756609214623,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 3150744,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1756609214624,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 4361741,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1756609214621,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 4711533,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1756782013908,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 4685247,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1756609214622,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 3895856,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1756695613031,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": -16028,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1756609214620,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 3128720,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1756609214621,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": 2976499,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1756609214620,
+      "scoring_period": 1,
+      "items": [
+        {
+          "player_id": -16009,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1757473212953,
+      "scoring_period": 2,
+      "items": [
+        {
+          "player_id": -16025,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1757473212953,
+      "scoring_period": 2,
+      "items": [
+        {
+          "player_id": 3929645,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1757559609923,
+      "scoring_period": 2,
+      "items": [
+        {
+          "player_id": 4429025,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1757559609924,
+      "scoring_period": 2,
+      "items": [
+        {
+          "player_id": -16014,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 27,
+      "process_date": 1757473212952,
+      "scoring_period": 2,
+      "items": [
+        {
+          "player_id": 4241372,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1757646004275,
+      "scoring_period": 2,
+      "items": [
+        {
+          "player_id": -16008,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758250804112,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": -16012,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758423603098,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 2576980,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1758164412692,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 4431280,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758164412693,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 4371733,
+          "type": "ADD",
+          "to_team_id": 5,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758250804111,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": -16027,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758164412692,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 5083076,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758250804113,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 3059915,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758250804112,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 4429205,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758164412693,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 3046779,
+          "type": "ADD",
+          "to_team_id": 5,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1758078001120,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 4241474,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 17,
+      "process_date": 1758078001119,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 3917792,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758078001120,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 4569587,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1758164412692,
+      "scoring_period": 3,
+      "items": [
+        {
+          "player_id": 4373626,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1758855601741,
+      "scoring_period": 4,
+      "items": [
+        {
+          "player_id": -16015,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1758769212290,
+      "scoring_period": 4,
+      "items": [
+        {
+          "player_id": 4882093,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 23,
+      "process_date": 1758682802256,
+      "scoring_period": 4,
+      "items": [
+        {
+          "player_id": 4429275,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1758769212289,
+      "scoring_period": 4,
+      "items": [
+        {
+          "player_id": 4883647,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1758682802258,
+      "scoring_period": 4,
+      "items": [
+        {
+          "player_id": -16024,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 10,
+      "process_date": 1759374012792,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4362478,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 8,
+      "process_date": 1759460402795,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4240657,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1759374012794,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4032473,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1759287603344,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4038441,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1759374012795,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4571557,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1759287603345,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4360438,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1759287603345,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4431452,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1759374012794,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": -16014,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1759460402798,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 3050478,
+          "type": "ADD",
+          "to_team_id": 5,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1759460402797,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4685720,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 11,
+      "process_date": 1759287603342,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 2576925,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1759374012793,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4697815,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 9,
+      "process_date": 1759287603343,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 3046439,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1759546813592,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 4038815,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1759374012795,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": 3916945,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 7,
+      "process_date": 1759374012793,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": -16005,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 10,
+      "process_date": 1759287603343,
+      "scoring_period": 5,
+      "items": [
+        {
+          "player_id": -16011,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 4,
+      "process_date": 1759892402054,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": -16013,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1759978812320,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": -16017,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1759892402055,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 16339,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1759978812319,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 4430968,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 7,
+      "process_date": 1760065202421,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 3059915,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1759892402055,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 11122,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 20,
+      "process_date": 1759892402053,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 4372071,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 4,
+      "process_date": 1759892402054,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 4361432,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1760151613602,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 2976592,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1759978812319,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 4566192,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 4,
+      "process_date": 1759892402054,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 4428718,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1759892402056,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 4249087,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1759892402055,
+      "scoring_period": 6,
+      "items": [
+        {
+          "player_id": 3123076,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1760670003098,
+      "scoring_period": 7,
+      "items": [
+        {
+          "player_id": -16015,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1760842804928,
+      "scoring_period": 7,
+      "items": [
+        {
+          "player_id": 4608810,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1760497204029,
+      "scoring_period": 7,
+      "items": [
+        {
+          "player_id": -16012,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 7,
+      "process_date": 1760497204028,
+      "scoring_period": 7,
+      "items": [
+        {
+          "player_id": 4689114,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1760497204030,
+      "scoring_period": 7,
+      "items": [
+        {
+          "player_id": 4034949,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1761102002875,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": -16025,
+          "type": "ADD",
+          "to_team_id": 5,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1761102002873,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 4595342,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1761102002874,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 3123052,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1761274802408,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 4361529,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1761188413981,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 4432710,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1761274802409,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 11252,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 7,
+      "process_date": 1761188413980,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 8439,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1761361214180,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 4596602,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1761447604678,
+      "scoring_period": 8,
+      "items": [
+        {
+          "player_id": 3124084,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 7,
+      "process_date": 1761706802127,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": -16014,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1761793212823,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": -16024,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 5,
+      "process_date": 1761706802128,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": -16008,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1761793212823,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 4431611,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1761879603420,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 3059915,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1761706802130,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 2473037,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 10,
+      "process_date": 1761706802126,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 4427728,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1761706802127,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 4685415,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 4,
+      "process_date": 1761966015492,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 4688813,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1761793212824,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": -16030,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1761706802128,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 4429275,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1761879603419,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 17372,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1761966015493,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 17427,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 23,
+      "process_date": 1761966015491,
+      "scoring_period": 9,
+      "items": [
+        {
+          "player_id": 4608686,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 7,
+      "process_date": 1762315202933,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 3912547,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762488001930,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 3150744,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1762401615771,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 4429013,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762401615772,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 4360078,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762315202938,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": -16005,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1762315202936,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 4686361,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 5,
+      "process_date": 1762315202935,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 4361741,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762315202939,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": -16002,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762401615772,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 4723086,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1762660804182,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 4574716,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762315202937,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 17372,
+          "type": "ADD",
+          "to_team_id": 5,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762315202938,
+      "scoring_period": 10,
+      "items": [
+        {
+          "player_id": 12460,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762920002150,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": 4569923,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1762920002150,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": -16003,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1763006416424,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": 4429148,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1762920002149,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": 3117256,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1762920002150,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": -16001,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763092802667,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": 4428209,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763006416424,
+      "scoring_period": 11,
+      "items": [
+        {
+          "player_id": 4689936,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1763524802198,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": -16021,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763524802199,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4697745,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763784014431,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4037235,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1763611213410,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 3116365,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1763611213409,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": -16001,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763524802199,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": -16008,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1763784014430,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 2578570,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763524802200,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4576297,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 3,
+      "process_date": 1763524802196,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": -16005,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763524802199,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4430871,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763697604570,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 3050478,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1763524802197,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4248528,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 21,
+      "process_date": 1763524802196,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4887558,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 5,
+      "process_date": 1763611213409,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4360761,
+          "type": "ADD",
+          "to_team_id": 7,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1763697604569,
+      "scoring_period": 12,
+      "items": [
+        {
+          "player_id": 4361529,
+          "type": "ADD",
+          "to_team_id": 5,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 5,
+      "process_date": 1764129604008,
+      "scoring_period": 13,
+      "items": [
+        {
+          "player_id": 4431280,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1764129604011,
+      "scoring_period": 13,
+      "items": [
+        {
+          "player_id": 4432762,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1764129604010,
+      "scoring_period": 13,
+      "items": [
+        {
+          "player_id": 4432620,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1764216015435,
+      "scoring_period": 13,
+      "items": [
+        {
+          "player_id": 3916433,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1764302403489,
+      "scoring_period": 13,
+      "items": [
+        {
+          "player_id": 4877706,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1764734417219,
+      "scoring_period": 14,
+      "items": [
+        {
+          "player_id": 3116165,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1764734417219,
+      "scoring_period": 14,
+      "items": [
+        {
+          "player_id": 2971573,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 6,
+      "process_date": 1764907204195,
+      "scoring_period": 14,
+      "items": [
+        {
+          "player_id": 4360310,
+          "type": "ADD",
+          "to_team_id": 6,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765080004796,
+      "scoring_period": 14,
+      "items": [
+        {
+          "player_id": 2985659,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1764993614725,
+      "scoring_period": 14,
+      "items": [
+        {
+          "player_id": -16028,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 16,
+      "process_date": 1764820814084,
+      "scoring_period": 14,
+      "items": [
+        {
+          "player_id": 4429096,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765425614206,
+      "scoring_period": 15,
+      "items": [
+        {
+          "player_id": -16006,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 12,
+      "process_date": 1765512003231,
+      "scoring_period": 15,
+      "items": [
+        {
+          "player_id": 4723086,
+          "type": "ADD",
+          "to_team_id": 10,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765339219528,
+      "scoring_period": 15,
+      "items": [
+        {
+          "player_id": 4682745,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765339219528,
+      "scoring_period": 15,
+      "items": [
+        {
+          "player_id": 4362249,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765339219527,
+      "scoring_period": 15,
+      "items": [
+        {
+          "player_id": -16030,
+          "type": "ADD",
+          "to_team_id": 1,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 2,
+      "process_date": 1765944016628,
+      "scoring_period": 16,
+      "items": [
+        {
+          "player_id": 4597500,
+          "type": "ADD",
+          "to_team_id": 3,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 16,
+      "process_date": 1766030413776,
+      "scoring_period": 16,
+      "items": [
+        {
+          "player_id": 4036378,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765944016629,
+      "scoring_period": 16,
+      "items": [
+        {
+          "player_id": 4575131,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765944016629,
+      "scoring_period": 16,
+      "items": [
+        {
+          "player_id": 3116406,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1765944016629,
+      "scoring_period": 16,
+      "items": [
+        {
+          "player_id": 4373626,
+          "type": "ADD",
+          "to_team_id": 4,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1766116802982,
+      "scoring_period": 16,
+      "items": [
+        {
+          "player_id": 4034949,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1766721602302,
+      "scoring_period": 17,
+      "items": [
+        {
+          "player_id": 4685415,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1766894404384,
+      "scoring_period": 17,
+      "items": [
+        {
+          "player_id": 4576297,
+          "type": "ADD",
+          "to_team_id": 2,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1766894404385,
+      "scoring_period": 17,
+      "items": [
+        {
+          "player_id": 3045147,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1766548801101,
+      "scoring_period": 17,
+      "items": [
+        {
+          "player_id": 3116385,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 4,
+      "process_date": 1766808014484,
+      "scoring_period": 17,
+      "items": [
+        {
+          "player_id": 4685278,
+          "type": "ADD",
+          "to_team_id": 8,
+          "from_team_id": 0
+        }
+      ]
+    },
+    {
+      "type": "WAIVER",
+      "status": "EXECUTED",
+      "bid_amount": 1,
+      "process_date": 1766548801101,
+      "scoring_period": 17,
+      "items": [
+        {
+          "player_id": 4360438,
+          "type": "ADD",
+          "to_team_id": 9,
+          "from_team_id": 0
+        }
+      ]
+    }
+  ]
+}

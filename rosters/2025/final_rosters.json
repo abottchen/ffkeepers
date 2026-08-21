@@ -1,0 +1,1517 @@
+{
+  "year": 2025,
+  "teams": [
+    {
+      "owner_id": 1,
+      "owner_name": "Adam",
+      "team_name": "Call Me The Breece",
+      "color": "#21D4FD",
+      "players": [
+        {
+          "player_id": 4426515,
+          "name": "Puka Nacua",
+          "position": "WR",
+          "nfl_team": "LAR",
+          "price": 13,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4430737,
+          "name": "Kyren Williams",
+          "position": "RB",
+          "nfl_team": "LAR",
+          "price": 8,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4427366,
+          "name": "Breece Hall",
+          "position": "RB",
+          "nfl_team": "NYJ",
+          "price": 14,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3139477,
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "nfl_team": "KC",
+          "price": 31,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4430878,
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "nfl_team": "SEA",
+          "price": 26,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 15847,
+          "name": "Travis Kelce",
+          "position": "TE",
+          "nfl_team": "KC",
+          "price": 19,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4360516,
+          "name": "Tyrone Tracy Jr.",
+          "position": "RB",
+          "nfl_team": "NYG",
+          "price": 7,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4428557,
+          "name": "Tyjae Spears",
+          "position": "RB",
+          "nfl_team": "TEN",
+          "price": 5,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4360248,
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "nfl_team": "ATL",
+          "price": 6,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4035687,
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "nfl_team": "IND",
+          "price": 2,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4569587,
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "nfl_team": "NYG",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 18,
+          "name": "Los Angeles Rams",
+          "position": "D/ST",
+          "nfl_team": "LAR",
+          "price": 7,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 2473037,
+          "name": "Jason Myers",
+          "position": "K",
+          "nfl_team": "SEA",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3912547,
+          "name": "Sam Darnold",
+          "position": "QB",
+          "nfl_team": "SEA",
+          "price": 7,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 6,
+          "name": "Chicago Bears",
+          "position": "D/ST",
+          "nfl_team": "CHI",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4429096,
+          "name": "Blake Corum",
+          "position": "RB",
+          "nfl_team": "LAR",
+          "price": 16,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3116406,
+          "name": "Tyreek Hill",
+          "position": "WR",
+          "nfl_team": "MIA",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4036378,
+          "name": "Jordan Love",
+          "position": "QB",
+          "nfl_team": "GB",
+          "price": 16,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4576297,
+          "name": "AJ Barner",
+          "position": "TE",
+          "nfl_team": "SEA",
+          "price": 1,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 2,
+      "owner_name": "Jodi",
+      "team_name": "Run CMC",
+      "color": "#FF5CA8",
+      "players": [
+        {
+          "player_id": 4361307,
+          "name": "Trey McBride",
+          "position": "TE",
+          "nfl_team": "ARI",
+          "price": 14,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4362238,
+          "name": "Chase Brown",
+          "position": "RB",
+          "nfl_team": "CIN",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4239993,
+          "name": "Tee Higgins",
+          "position": "WR",
+          "nfl_team": "CIN",
+          "price": 6,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3915511,
+          "name": "Joe Burrow",
+          "position": "QB",
+          "nfl_team": "CIN",
+          "price": 40,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 16737,
+          "name": "Mike Evans",
+          "position": "WR",
+          "nfl_team": "TB",
+          "price": 33,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4568490,
+          "name": "RJ Harvey",
+          "position": "RB",
+          "nfl_team": "DEN",
+          "price": 7,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 10,
+          "name": "Denver Broncos",
+          "position": "D/ST",
+          "nfl_team": "DEN",
+          "price": 9,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4567750,
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "nfl_team": "TB",
+          "price": 5,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4361579,
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nfl_team": "DAL",
+          "price": 7,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 2976212,
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "nfl_team": "NE",
+          "price": 2,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4431452,
+          "name": "Drake Maye",
+          "position": "QB",
+          "nfl_team": "NE",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4697815,
+          "name": "Rachaad White",
+          "position": "RB",
+          "nfl_team": "TB",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4038815,
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "nfl_team": "CAR",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4595342,
+          "name": "Oronde Gadsden II",
+          "position": "TE",
+          "nfl_team": "LAC",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4429275,
+          "name": "Trey Benson",
+          "position": "RB",
+          "nfl_team": "ARI",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 2985659,
+          "name": "Wil Lutz",
+          "position": "K",
+          "nfl_team": "DEN",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 15,
+          "name": "Jacksonville Jaguars",
+          "position": "D/ST",
+          "nfl_team": "JAX",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4362249,
+          "name": "Jayden Reed",
+          "position": "WR",
+          "nfl_team": "GB",
+          "price": 1,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 3,
+      "owner_name": "Raman",
+      "team_name": "THE NIGHTMARE",
+      "color": "#B06CF7",
+      "players": [
+        {
+          "player_id": 3040151,
+          "name": "George Kittle",
+          "position": "TE",
+          "nfl_team": "SF",
+          "price": 23,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4379399,
+          "name": "James Cook",
+          "position": "RB",
+          "nfl_team": "BUF",
+          "price": 33,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4612826,
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nfl_team": "LAC",
+          "price": 2,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3117251,
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "nfl_team": "SF",
+          "price": 42,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4432708,
+          "name": "Marvin Harrison Jr.",
+          "position": "WR",
+          "nfl_team": "ARI",
+          "price": 26,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 2577417,
+          "name": "Dak Prescott",
+          "position": "QB",
+          "nfl_team": "DAL",
+          "price": 4,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 16800,
+          "name": "Davante Adams",
+          "position": "WR",
+          "nfl_team": "LAR",
+          "price": 27,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3052587,
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "nfl_team": "TB",
+          "price": 13,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4239996,
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "nfl_team": "JAX",
+          "price": 10,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 12483,
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "nfl_team": "LAR",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3121023,
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "nfl_team": "PHI",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4430968,
+          "name": "Kimani Vidal",
+          "position": "RB",
+          "nfl_team": "LAC",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 22,
+          "name": "New England Patriots",
+          "position": "D/ST",
+          "nfl_team": "NE",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4686361,
+          "name": "Cam Little",
+          "position": "K",
+          "nfl_team": "JAX",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4248528,
+          "name": "Christian Watson",
+          "position": "WR",
+          "nfl_team": "GB",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3116165,
+          "name": "Chris Godwin",
+          "position": "WR",
+          "nfl_team": "TB",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4685278,
+          "name": "Luther Burden III",
+          "position": "WR",
+          "nfl_team": "CHI",
+          "price": 4,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 4,
+      "owner_name": "Greg",
+      "team_name": "Like a Good Nabers",
+      "color": "#FF8A3D",
+      "players": [
+        {
+          "player_id": 4362628,
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "nfl_team": "CIN",
+          "price": 11,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4429795,
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "nfl_team": "DET",
+          "price": 43,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4595348,
+          "name": "Malik Nabers",
+          "position": "WR",
+          "nfl_team": "NYG",
+          "price": 25,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3918298,
+          "name": "Josh Allen",
+          "position": "QB",
+          "nfl_team": "BUF",
+          "price": 40,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4429160,
+          "name": "De'Von Achane",
+          "position": "RB",
+          "nfl_team": "MIA",
+          "price": 40,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4685702,
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "nfl_team": "CLE",
+          "price": 7,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4385690,
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "nfl_team": "BUF",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4431299,
+          "name": "Rome Odunze",
+          "position": "WR",
+          "nfl_team": "CHI",
+          "price": 8,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4569173,
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "nfl_team": "NE",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4360078,
+          "name": "Alec Pierce",
+          "position": "WR",
+          "nfl_team": "IND",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3117256,
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "nfl_team": "HOU",
+          "price": 6,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4569923,
+          "name": "Andy Borregales",
+          "position": "K",
+          "nfl_team": "NE",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 8,
+          "name": "Cleveland Browns",
+          "position": "D/ST",
+          "nfl_team": "CLE",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 26,
+          "name": "Philadelphia Eagles",
+          "position": "D/ST",
+          "nfl_team": "PHI",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4431280,
+          "name": "Troy Franklin",
+          "position": "WR",
+          "nfl_team": "DEN",
+          "price": 5,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 2971573,
+          "name": "Ka'imi Fairbairn",
+          "position": "K",
+          "nfl_team": "HOU",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4682745,
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "nfl_team": "MIA",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4597500,
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "nfl_team": "IND",
+          "price": 2,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 5,
+      "owner_name": "Elisa",
+      "team_name": "To Infinity and Bijan!",
+      "color": "#FFD23F",
+      "players": [
+        {
+          "player_id": 4374302,
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "nfl_team": "DET",
+          "price": 61,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4683062,
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "nfl_team": "KC",
+          "price": 11,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4430807,
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "nfl_team": "ATL",
+          "price": 61,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4685382,
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "nfl_team": "LAC",
+          "price": 19,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4426338,
+          "name": "Bo Nix",
+          "position": "QB",
+          "nfl_team": "DEN",
+          "price": 9,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3916148,
+          "name": "Tony Pollard",
+          "position": "RB",
+          "nfl_team": "TEN",
+          "price": 15,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4362081,
+          "name": "Cameron Dicker",
+          "position": "K",
+          "nfl_team": "LAC",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 13,
+          "name": "Houston Texans",
+          "position": "D/ST",
+          "nfl_team": "HOU",
+          "price": 4,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4696981,
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "nfl_team": "NYG",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4361370,
+          "name": "Chris Olave",
+          "position": "WR",
+          "nfl_team": "NO",
+          "price": 6,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4429059,
+          "name": "Woody Marks",
+          "position": "RB",
+          "nfl_team": "HOU",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 15818,
+          "name": "Keenan Allen",
+          "position": "WR",
+          "nfl_team": "LAC",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 5083076,
+          "name": "Harold Fannin Jr.",
+          "position": "TE",
+          "nfl_team": "CLE",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3046439,
+          "name": "Hunter Henry",
+          "position": "TE",
+          "nfl_team": "NE",
+          "price": 9,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4689114,
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "nfl_team": "NYG",
+          "price": 7,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4887558,
+          "name": "Emanuel Wilson",
+          "position": "RB",
+          "nfl_team": "GB",
+          "price": 21,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4877706,
+          "name": "Jayden Higgins",
+          "position": "WR",
+          "nfl_team": "HOU",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4373626,
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "nfl_team": "ATL",
+          "price": 1,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 6,
+      "owner_name": "Lance",
+      "team_name": "Dewey Pest Control",
+      "color": "#16C2C2",
+      "players": [
+        {
+          "player_id": 4426348,
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "nfl_team": "WAS",
+          "price": 10,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4035538,
+          "name": "David Montgomery",
+          "position": "RB",
+          "nfl_team": "DET",
+          "price": 10,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4429615,
+          "name": "Zay Flowers",
+          "position": "WR",
+          "nfl_team": "BAL",
+          "price": 21,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4432773,
+          "name": "Brian Thomas Jr.",
+          "position": "WR",
+          "nfl_team": "JAX",
+          "price": 41,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3043078,
+          "name": "Derrick Henry",
+          "position": "RB",
+          "nfl_team": "BAL",
+          "price": 46,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4047646,
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nfl_team": "PHI",
+          "price": 32,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4430027,
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "nfl_team": "DET",
+          "price": 21,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 27,
+          "name": "Pittsburgh Steelers",
+          "position": "D/ST",
+          "nfl_team": "PIT",
+          "price": 5,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3953687,
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "nfl_team": "DAL",
+          "price": 6,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4360569,
+          "name": "Jordan Mason",
+          "position": "RB",
+          "nfl_team": "MIN",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4426354,
+          "name": "George Pickens",
+          "position": "WR",
+          "nfl_team": "DAL",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4242355,
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "nfl_team": "DAL",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4429205,
+          "name": "Jordan Addison",
+          "position": "WR",
+          "nfl_team": "MIN",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4432710,
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "nfl_team": "NE",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4361741,
+          "name": "Brock Purdy",
+          "position": "QB",
+          "nfl_team": "SF",
+          "price": 5,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4432762,
+          "name": "Shedeur Sanders",
+          "position": "QB",
+          "nfl_team": "CLE",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3916433,
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "nfl_team": "LV",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4723086,
+          "name": "Colston Loveland",
+          "position": "TE",
+          "nfl_team": "CHI",
+          "price": 12,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 7,
+      "owner_name": "Yash",
+      "team_name": "Yash's Team",
+      "color": "#7C9CFF",
+      "players": [
+        {
+          "player_id": 4262921,
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "nfl_team": "MIN",
+          "price": 44,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4596448,
+          "name": "Bucky Irving",
+          "position": "RB",
+          "nfl_team": "TB",
+          "price": 2,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4242335,
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "nfl_team": "IND",
+          "price": 11,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4241389,
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "nfl_team": "DAL",
+          "price": 45,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4258173,
+          "name": "Nico Collins",
+          "position": "WR",
+          "nfl_team": "HOU",
+          "price": 41,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3916387,
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "nfl_team": "BAL",
+          "price": 28,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4036133,
+          "name": "T.J. Hockenson",
+          "position": "TE",
+          "nfl_team": "MIN",
+          "price": 10,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3,
+          "name": "Baltimore Ravens",
+          "position": "D/ST",
+          "nfl_team": "BAL",
+          "price": 5,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3128720,
+          "name": "Nick Chubb",
+          "position": "RB",
+          "nfl_team": "HOU",
+          "price": 6,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4686472,
+          "name": "Marvin Mims Jr.",
+          "position": "WR",
+          "nfl_team": "DEN",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 28,
+          "name": "Seattle Seahawks",
+          "position": "D/ST",
+          "nfl_team": "SEA",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4361432,
+          "name": "Romeo Doubs",
+          "position": "WR",
+          "nfl_team": "GB",
+          "price": 4,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4428718,
+          "name": "Tre Tucker",
+          "position": "WR",
+          "nfl_team": "LV",
+          "price": 4,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3123076,
+          "name": "David Njoku",
+          "position": "TE",
+          "nfl_team": "CLE",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3059915,
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "nfl_team": "KC",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 17427,
+          "name": "Cairo Santos",
+          "position": "K",
+          "nfl_team": "CHI",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4360310,
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "nfl_team": "JAX",
+          "price": 6,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 8,
+      "owner_name": "Jackie",
+      "team_name": "Blood Sweat Beers",
+      "color": "#E8453C",
+      "players": [
+        {
+          "player_id": 4569618,
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "nfl_team": "NYJ",
+          "price": 6,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3929630,
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "nfl_team": "PHI",
+          "price": 51,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4426502,
+          "name": "Drake London",
+          "position": "WR",
+          "nfl_team": "ATL",
+          "price": 20,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4040715,
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "nfl_team": "PHI",
+          "price": 25,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4890973,
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "nfl_team": "LV",
+          "price": 50,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3915416,
+          "name": "DJ Moore",
+          "position": "WR",
+          "nfl_team": "CHI",
+          "price": 17,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3051876,
+          "name": "Evan Engram",
+          "position": "TE",
+          "nfl_team": "DEN",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 21,
+          "name": "Minnesota Vikings",
+          "position": "D/ST",
+          "nfl_team": "MIN",
+          "price": 6,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4426385,
+          "name": "Zach Charbonnet",
+          "position": "RB",
+          "nfl_team": "SEA",
+          "price": 5,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4373678,
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "nfl_team": "BUF",
+          "price": 5,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3886598,
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "nfl_team": "SF",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 12,
+          "name": "Green Bay Packers",
+          "position": "D/ST",
+          "nfl_team": "GB",
+          "price": 6,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 15835,
+          "name": "Zach Ertz",
+          "position": "TE",
+          "nfl_team": "WAS",
+          "price": 3,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 11122,
+          "name": "Matt Prater",
+          "position": "K",
+          "nfl_team": "",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4431611,
+          "name": "Caleb Williams",
+          "position": "QB",
+          "nfl_team": "CHI",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4574716,
+          "name": "Harrison Mevis",
+          "position": "K",
+          "nfl_team": "NYJ",
+          "price": 2,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4360761,
+          "name": "Michael Wilson",
+          "position": "WR",
+          "nfl_team": "ARI",
+          "price": 5,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3116365,
+          "name": "Mark Andrews",
+          "position": "TE",
+          "nfl_team": "BAL",
+          "price": 2,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 9,
+      "owner_name": "Mitch",
+      "team_name": "Don't Cook the Lamb",
+      "color": "#2BD576",
+      "players": [
+        {
+          "player_id": 4241416,
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "nfl_team": "CAR",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4432577,
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "nfl_team": "HOU",
+          "price": 3,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4432665,
+          "name": "Brock Bowers",
+          "position": "TE",
+          "nfl_team": "LV",
+          "price": 9,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 2977187,
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "nfl_team": "SEA",
+          "price": 15,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3128429,
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "nfl_team": "DEN",
+          "price": 25,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4567048,
+          "name": "Kenneth Walker III",
+          "position": "RB",
+          "nfl_team": "SEA",
+          "price": 28,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4047650,
+          "name": "DK Metcalf",
+          "position": "WR",
+          "nfl_team": "PIT",
+          "price": 15,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3042519,
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "nfl_team": "MIN",
+          "price": 12,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4426388,
+          "name": "Jameson Williams",
+          "position": "WR",
+          "nfl_team": "DET",
+          "price": 12,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3126486,
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nfl_team": "WAS",
+          "price": 8,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4372016,
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "nfl_team": "MIA",
+          "price": 12,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4361411,
+          "name": "Pat Freiermuth",
+          "position": "TE",
+          "nfl_team": "PIT",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3046779,
+          "name": "Jared Goff",
+          "position": "QB",
+          "nfl_team": "DET",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4371733,
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "nfl_team": "PIT",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 29,
+          "name": "San Francisco 49ers",
+          "position": "D/ST",
+          "nfl_team": "SF",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 17372,
+          "name": "Chris Boswell",
+          "position": "K",
+          "nfl_team": "PIT",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4361529,
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "nfl_team": "KC",
+          "price": 1,
+          "acquired": "waiver"
+        }
+      ]
+    },
+    {
+      "owner_id": 10,
+      "owner_name": "Sanjay",
+      "team_name": "Sanjay's Team",
+      "color": "#9D7BFF",
+      "players": [
+        {
+          "player_id": 4047365,
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "nfl_team": "GB",
+          "price": 33,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4569987,
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "nfl_team": "PIT",
+          "price": 9,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3054850,
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "nfl_team": "NO",
+          "price": 18,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 3121422,
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "nfl_team": "WAS",
+          "price": 20,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4038941,
+          "name": "Justin Herbert",
+          "position": "QB",
+          "nfl_team": "LAC",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4241478,
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "nfl_team": "PHI",
+          "price": 14,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4431459,
+          "name": "Tyler Warren",
+          "position": "TE",
+          "nfl_team": "IND",
+          "price": 10,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4428331,
+          "name": "Rashee Rice",
+          "position": "WR",
+          "nfl_team": "KC",
+          "price": 8,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4685472,
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "nfl_team": "CAR",
+          "price": 12,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4433970,
+          "name": "J.J. McCarthy",
+          "position": "QB",
+          "nfl_team": "MIN",
+          "price": 1,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4259545,
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "nfl_team": "CHI",
+          "price": 13,
+          "acquired": "draft"
+        },
+        {
+          "player_id": 4429025,
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "nfl_team": "LAC",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4689936,
+          "name": "Jake Bates",
+          "position": "K",
+          "nfl_team": "DET",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 9,
+          "name": "Dallas Cowboys",
+          "position": "D/ST",
+          "nfl_team": "DAL",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4575131,
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "nfl_team": "WAS",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4360438,
+          "name": "Brandon Aiyuk",
+          "position": "WR",
+          "nfl_team": "SF",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3116385,
+          "name": "Joe Mixon",
+          "position": "RB",
+          "nfl_team": "HOU",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 4685415,
+          "name": "Travis Hunter",
+          "position": "WR",
+          "nfl_team": "JAX",
+          "price": 1,
+          "acquired": "waiver"
+        },
+        {
+          "player_id": 3045147,
+          "name": "James Conner",
+          "position": "RB",
+          "nfl_team": "ARI",
+          "price": 1,
+          "acquired": "waiver"
+        }
+      ]
+    }
+  ]
+}

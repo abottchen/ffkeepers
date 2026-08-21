@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const encryptionService = require('./services/encryptionService');
-const csvService = require('./services/csvService');
+const rosterService = require('./services/rosterService');
 const path = require('path');
 const https = require('https');
 const http = require('http');
@@ -129,7 +129,7 @@ async function submitToApi(teamName, keepers, startVersion) {
         ]);
         
         // Load roster data to get player costs
-        const rosterData = await csvService.loadRosterData(process.env.CURRENT_YEAR);
+        const rosterData = await rosterService.loadRosterData(process.env.CURRENT_YEAR);
         
         // Find owner_id by matching owner name or team name (case-insensitive)
         const owner = owners.find(o => 
@@ -150,7 +150,7 @@ async function submitToApi(teamName, keepers, startVersion) {
         
         for (const keeperName of keepers) {
             // Parse keeper name to get player name and find cost
-            const playerInfo = findPlayerInRoster(keeperName, rosterData.players[teamName]);
+            const playerInfo = findPlayerInRoster(keeperName, rosterData.players[teamName.toLowerCase()]);
             if (!playerInfo) {
                 console.log(`FAILED: ${keeperName} - Could not find roster info`);
                 errorCount++;

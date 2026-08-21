@@ -4,76 +4,62 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a Fantasy Football keeper selection system built with Node.js and Express. The application allows team owners to select keeper players for the upcoming season with encrypted storage of their selections. It has been modernized from a legacy Perl CGI application.
+Fantasy Football keeper selection system (Node.js/Express, modernized from a legacy Perl CGI app). Team owners select up to 3 keeper players for the upcoming season; selections are encrypted and stored server-side. Tests use the built-in `node:test` runner plus supertest (`npm test`); no linter is configured.
 
-## Key Components
+## Commands
 
-### Backend (Node.js/Express)
-- **src/server.js**: Main Express server, listens on configurable port (default 3000)
-- **src/routes/keepers.js**: REST API endpoints for keeper selection
-- **src/services/csvService.js**: Handles CSV parsing and roster data management
-- **src/services/encryptionService.js**: AES-256-CBC encryption for keeper selections
-- **src/decrypt.js**: Command-line utility to decrypt saved selections
+```bash
+npm install            # Install dependencies
+npm start              # Start server (port from .env, currently 3100)
+npm run dev            # Start with nodemon auto-reload
+npm test               # Run the test suite (node --test)
+npm run fetch-espn <year>      # Pull end-of-year rosters + transactions from ESPN into rosters/<year>/espn_data.json
+npm run build-rosters <year>   # Merge draft exports + espn_data.json into final_rosters.json
+npm run decrypt <team-name> <password>           # Print a team's saved keepers
+npm run decrypt <team-name> <password> api=<n>   # Also submit keepers to the draft tracker API, starting at version n
+```
 
-### Frontend
-- **public/index.html**: Single-page application structure
-- **public/js/app.js**: Vanilla JavaScript application logic
-- **public/css/style.css**: Responsive CSS with mobile support
+## Deployment
 
-### Data
-- **rosters/ff*rosters.csv**: Yearly roster data files (CSV format with team names and player costs)
-- **data/encrypted/**: Encrypted keeper selection files
-- **data/keepers.log**: Password recovery log
+The app runs as a systemd **user** service: `~/.config/systemd/user/ffkeepers.service` (enabled, with lingering on). Manage with `systemctl --user {status,restart} ffkeepers` and `journalctl --user -u ffkeepers`. The unit's `ExecStart` points at the nvm-versioned node binary (`~/.nvm/versions/node/v24.15.0/bin/node`) — update the path and `daemon-reload` after an nvm upgrade. Port 3000 is used by an unrelated app on this machine; this app uses 3100.
+
+## Gitignored runtime state
+
+`.env`, `data/`, and `node_modules/` are gitignored — a fresh clone will not run until `.env` is created (copy `.env.example`) and `npm install` is run. If `CURRENT_YEAR` is unset, the code falls back to the current calendar year and will fail unless `rosters/<that year>/final_rosters.json` exists; set it to the newest year directory that has one. `data/` is auto-created on first keeper submission.
 
 ## Architecture
 
-### Data Flow
-1. CSV roster files contain team/player data in double-comma separated format
-2. Server reads roster file based on CURRENT_YEAR in .env
-3. Frontend fetches data via REST API
-4. Users select team and up to 3 keeper players
-5. Selections encrypted with AES-256-CBC and saved to data/encrypted/{teamname}.enc
-6. Passwords logged to data/keepers.log for recovery
+### Data flow
+1. `scripts/fetch-espn.js` (`npm run fetch-espn <year>`) pulls the league's end-of-year rosters and full transaction log from ESPN's fantasy API (`lm-api-reads.fantasy.espn.com`, league is private — needs `ESPN_S2`/`ESPN_SWID` cookies in `.env`) and writes a trimmed `rosters/<year>/espn_data.json`.
+2. `scripts/build-rosters.js` (`npm run build-rosters <year>`) merges the year's draft exports — `rosters/<year>/{owners,players,draft_state}.json` — with `espn_data.json` into the app's single source of truth, `rosters/<year>/final_rosters.json`. Roster membership comes from ESPN (end-of-year, not the draft). Prices: drafted players keep their draft price (asserting the ESPN owner is the drafter); added players get their latest executed waiver `bid_amount` (asserted > 0); trade-only players retain their prior price. ESPN teams map to owners by member **first name** (never team names, which change yearly; `OWNER_ALIASES` in the script handles e.g. Jacqueline→Jackie). Any unresolvable player fails the build loudly.
+3. `src/services/rosterService.js` reads only `final_rosters.json` (path resolved relative to the repo, or `ROSTERS_DIR`; tests use this override) and computes each player's keeper cost.
+4. Frontend (`public/` — vanilla JS single-page app, no build step) fetches rosters via the REST API, user picks a team and up to 3 keepers plus a password. Teams are keyed by lowercased owner name (e.g. `adam`); the UI shows owner + fantasy team name and ESPN player headshots.
+5. `src/routes/keepers.js` serializes selections as `"Name $cost"` strings joined by `/`, then `src/services/encryptionService.js` encrypts and writes `data/encrypted/{teamkey}.enc`.
+6. Every submission appends the team's password **in plaintext** to `data/keepers.log` (intentional legacy recovery behavior — do not "fix").
+7. `src/decrypt.js` is the CLI to read selections back; with `api=<n>` it also pushes them to a separate draft tracker service.
 
-### Key Functions
-- `calculateKeeperCost()`: 10% increase rounded up, minimum $1 increase
-- `encrypt()/decrypt()`: AES-256-CBC encryption using Node.js crypto
-- `loadRosterData()`: Parses CSV files into structured data
+### Roster data format
+`final_rosters.json`: `{year, teams: [{owner_id, owner_name, team_name, color, players: [{player_id, name, position, nfl_team, price, acquired: "draft"|"waiver"|"trade"}]}]}`. `player_id` is the ESPN player id (headshots come from `a.espncdn.com/i/headshots/nfl/players/full/<id>.png`; D/ST uses team logos). `price` is what the player last cost their current owner (draft or pickup price). `nfl_team` is a last-season snapshot — don't display it as current (it's only used for D/ST logos). Old years (2014–2024) exist only as legacy `ff<year>rosters.csv` files the app can no longer read.
 
-## Development Commands
+### Keeper cost rule
+`calculateKeeperCost()`: last year's cost + 10% (rounded), minimum $1 increase.
 
-```bash
-# Install dependencies
-npm install
+### Encryption
+AES-256-CBC with a key derived as SHA-256 of the password; output is `hex(iv):hex(ciphertext)`. Decryption of a `.enc` file only needs the password — there is no server-side secret.
 
-# Start production server
-npm start
-
-# Start development server with auto-reload
-npm run dev
-
-# Decrypt keeper selections
-npm run decrypt <team-name> <password>
-```
+### Draft tracker integration (src/decrypt.js)
+Fetches owners/players from `{API_BASE_URL}:8176/api/v1/{owners,players}` and POSTs each keeper to `{API_BASE_URL}:8175/api/v1/admin/draft` with `{owner_id, player_id, price, expected_version}`, incrementing `expected_version` per submission from the `api=<n>` argument. Team matching is case-insensitive against owner name or team name; player matching falls back to partial name match (which is what tolerates the stored `"Name $cost"` suffix).
 
 ## API Endpoints
 
-- `GET /api/keepers/teams`: Get all teams and rosters
-- `GET /api/keepers/team/:teamName`: Get specific team roster
-- `POST /api/keepers/submit`: Submit keeper selections
-- `POST /api/keepers/decrypt`: Decrypt saved selections
+- `GET /api/keepers/teams` — all teams (`{key, ownerName, teamName, color}`) and rosters keyed by team key
+- `GET /api/keepers/team/:teamName` — one team's roster (owner key, case-insensitive)
+- `POST /api/keepers/submit` — body `{team, players: [{name, cost}], password}` (max 3 players, enforced in frontend and backend)
+- `POST /api/keepers/decrypt` — body `{team, password}`
 
 ## Configuration (.env)
 
-- `PORT`: Server port (default: 3000)
-- `CURRENT_YEAR`: Which roster CSV to use (e.g., 2023)
-- `DATA_DIR`: Base data directory
-- `ENCRYPTED_DIR`: Where to store encrypted files
-- `LOG_FILE`: Password recovery log location
-
-## Important Notes
-
-- Maximum 3 keepers per team enforced in frontend and backend
-- Passwords are logged in plaintext for recovery (legacy behavior maintained)
-- Year must be updated in .env when new roster CSVs are added
-- No authentication layer - consider adding for production use
+- `PORT`: server port (currently 3100)
+- `CURRENT_YEAR`: which `rosters/<year>/final_rosters.json` to load — bump when adding a new year's data
+- `DATA_DIR`, `ENCRYPTED_DIR`, `LOG_FILE`: data storage locations (defaults under `./data/`)
+- `API_BASE_URL`: draft tracker base URL for `decrypt.js` (default `http://localhost`; ports 8176/8175 are hardcoded)

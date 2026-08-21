@@ -1,0 +1,25 @@
+{
+  "year": 2099,
+  "teams": [
+    {
+      "owner_id": 1,
+      "owner_name": "Adam",
+      "team_name": "Call Me The Breece",
+      "color": "#21D4FD",
+      "players": [
+        { "player_id": 4430737, "name": "Bijan Robinson", "position": "RB", "nfl_team": "ATL", "price": 40, "acquired": "draft" },
+        { "player_id": 999, "name": "Cheap Guy", "position": "TE", "nfl_team": "KC", "price": 1, "acquired": "waiver" },
+        { "player_id": 12, "name": "Green Bay Packers", "position": "D/ST", "nfl_team": "GB", "price": 2, "acquired": "draft" }
+      ]
+    },
+    {
+      "owner_id": 2,
+      "owner_name": "Jodi",
+      "team_name": "Run CMC",
+      "color": "#FF5CA8",
+      "players": [
+        { "player_id": 15847, "name": "Davante Adams", "position": "WR", "nfl_team": "LAR", "price": 14, "acquired": "draft" }
+      ]
+    }
+  ]
+}

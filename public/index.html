@@ -8,13 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Fantasy Football Keeper Selection</h1>
+        <header class="topbar">
+            <h1>Fantasy Football <span class="topbar-accent">Keeper Selection</span></h1>
+            <div class="topbar-actions">
+                <button id="themeToggle" class="btn btn-secondary theme-toggle" title="Toggle theme">🌙</button>
+            </div>
         </header>
 
         <main>
             <!-- Team Selection -->
-            <div id="teamSelection" class="section">
+            <div id="teamSelection" class="section narrow-section">
                 <h2>Select Your Team</h2>
                 <select id="teamSelect" class="form-control">
                     <option value="">Choose your team...</option>
@@ -33,35 +36,54 @@
                 <button id="backToSelection" class="btn btn-primary">Back to Team Selection</button>
             </div>
 
-            <!-- Player Selection -->
-            <div id="playerSelection" class="section hidden">
-                <h2>Select Your Keepers</h2>
-                <p class="info">You may select up to 3 players to keep for next season</p>
-                
-                <!-- Progress and Salary Cap Display -->
-                <div class="keeper-status">
-                    <div id="progressIndicator" class="progress-indicator empty">0 of 3 keepers selected</div>
-                    <div id="salaryCapDisplay" class="salary-cap-display under-budget">
-                        <div class="salary-summary">
-                            <span class="total-cost">Total Keeper Cost: <strong>$0</strong></span>
-                            <span class="remaining-budget">Remaining Budget: <strong>$200</strong></span>
+            <!-- Player Selection: roster + keeper slip -->
+            <div id="playerSelection" class="selection-layout hidden">
+                <section class="roster-panel">
+                    <div class="roster-toolbar">
+                        <div class="roster-heading">
+                            <h2 id="rosterTeamName">Roster</h2>
+                            <p class="hint">Click a player to add them to your keeper slip &mdash; up to 3.</p>
                         </div>
+                        <span class="cost-legend">last year&rsquo;s cost &rarr; <strong>keeper cost</strong></span>
                     </div>
-                </div>
-                
-                <!-- Layout Controls -->
-                <div class="layout-controls">
-                    <button id="layoutToggle" class="btn btn-secondary layout-toggle" title="Toggle layout">
-                        <span class="layout-icon">⊞</span>
-                        <span class="layout-text">Grid View</span>
-                    </button>
-                </div>
-                
-                <div id="playerList" class="player-list"></div>
+                    <div id="playerList" class="player-list"></div>
+                </section>
+
+                <aside class="keeper-slip">
+                    <div class="slip-header">
+                        <span class="slip-eyebrow">Keeper Slip</span>
+                        <span id="slipTeamName" class="slip-team"></span>
+                    </div>
+
+                    <ol id="slipSlots" class="slip-slots"></ol>
+
+                    <div id="slipBudget" class="slip-budget">
+                        <div class="budget-row">
+                            <span>Total keeper cost</span>
+                            <strong id="slipTotal">$0</strong>
+                        </div>
+                        <div class="budget-row">
+                            <span>Remaining of $200</span>
+                            <strong id="slipRemaining">$200</strong>
+                        </div>
+                        <div class="budget-bar"><div id="budgetBarFill" class="budget-bar-fill"></div></div>
+                    </div>
+
+                    <div class="slip-submit">
+                        <label for="password">Team password</label>
+                        <input type="password" id="password" class="form-control slip-password" placeholder="Enter password" autocomplete="off">
+                        <button id="submitKeepers" class="btn btn-success btn-block" disabled>Submit Keepers</button>
+                        <p id="slipHint" class="slip-hint">Pick at least one player to get started</p>
+                    </div>
+
+                    <div id="slipError" class="slip-error hidden"></div>
+
+                    <button id="changeTeam" class="link-btn">&larr; Change team</button>
+                </aside>
             </div>
 
             <!-- Confirmation -->
-            <div id="confirmation" class="section hidden">
+            <div id="confirmation" class="section narrow-section hidden">
                 <h2>Keepers Saved Successfully!</h2>
                 <div id="confirmationDetails"></div>
                 <button id="selectAnother" class="btn btn-primary">Select Another Team</button>
@@ -70,25 +92,6 @@
             <!-- Error Messages -->
             <div id="errorMessage" class="error hidden"></div>
         </main>
-        
-        <!-- Sticky Submit Section -->
-        <div id="stickySubmit" class="sticky-submit hidden">
-            <div class="sticky-submit-content">
-                <div class="submit-progress">
-                    <span id="stickyProgressText">Select players to continue</span>
-                    <div id="stickyBudgetText" class="submit-budget">Budget: $200</div>
-                </div>
-                <div class="submit-actions">
-                    <div id="passwordSection" class="password-inline hidden">
-                        <input type="password" id="password" class="password-input" placeholder="Enter password">
-                    </div>
-                    <button id="submitKeepers" class="btn btn-success" disabled>Submit Keepers</button>
-                    <button id="changeTeam" class="btn btn-secondary">Change Team</button>
-                    <button id="themeToggle" class="btn btn-secondary theme-toggle" title="Toggle theme">🌙</button>
-                </div>
-                <div id="stickyErrorMessage" class="sticky-error hidden"></div>
-            </div>
-        </div>
     </div>
 
     <script src="/js/app.js"></script>
